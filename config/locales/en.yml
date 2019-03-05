@@ -36,6 +36,10 @@ en:
   explain_our_project: "Discover our different projects web"
   me_contacter: "Contact us!"
   follow: "Follow us!"
+  accompagnement: "Support"
+  site_vitrine: "Static website"
+  landing-page: "Landing page"
+  hebergement: "Hosting"
 
   message_mailer:
     contact_me:
