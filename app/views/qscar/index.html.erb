@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="section" id="about_us">
+    <%= render template: 'qscar/about' %>
+  </div>
+  <div class="section" id="our_project">
+    <%= render template: 'qscar/project' %>
+  </div>
+  <div class="section" id="contact_us">
+    <div class="title">
+      <span><%= t('contact_us') %></span>
+    </div>
+    <div class="content">
+      <div class="text_content para_3">
+        <div class="panel panel_left">
+        
+        </div>
+        <div class="panel panel_right">
+          <div class="form">
+            <%= render :template => 'messages/new' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

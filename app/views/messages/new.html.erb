@@ -1,0 +1,24 @@
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+<%= form_for @message, url: create_message_path do |f| %>
+  <div class="input-wrap">
+    <i class="far fa-user"></i>
+    <label for="name">Name</label>
+    <%= f.text_field :name, id: 'name', placeholder: 'name', class: 'input' %>
+  </div>
+  <div class="input-wrap">
+    <i class="far fa-envelope"></i>
+    <label for="email">Email</label>
+    <%= f.email_field :email, id: 'email', placeholder: 'email', class: 'input' %>
+  </div>
+  <div class="input-wrap">
+    <i class="far fa-edit"></i>
+    <label for="body">Body</label>
+    <%= f.text_area :body, id: 'body', placeholder: 'body', class: 'input' %>
+  </div> 
+  <div>
+    <%= f.submit 'send', class: 'button' %>
+  </div>
+<% end %>

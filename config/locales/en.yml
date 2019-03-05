@@ -1,0 +1,42 @@
+
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  about_us: "About us"
+  what_we_do: "What we do?"
+  contact_us: "Get in touch"
+  explain_about_us: "Freelance front-end developer avec un gout prononcé pour le design et les détails.
+  J'aime donner vie à tous les projets sur lesquels je travaille."
+  explain_our_project: "Discover our different projects web"
+  me_contacter: "Contact us!"
+  follow: "Follow us!"
+
+  message_mailer:
+    contact_me:
+      subject: ""
