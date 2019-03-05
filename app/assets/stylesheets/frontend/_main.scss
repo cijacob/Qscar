@@ -3,6 +3,7 @@
 @import 'abstracts/functions';
 @import 'abstracts/placeholders';
 @import 'abstracts/mixins';
+@import 'abstracts/queries';
 
 //BASES FOLDER
 @import 'base/base';
@@ -11,3 +12,5 @@
 
 //LAYOUTs FOLDER
 @import 'layouts/qscar';
+@import 'layouts/header';
+@import 'layouts/footer';
