@@ -1,0 +1,13 @@
+//ABSTRACTS FOLDER
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+//BASES FOLDER
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+
+//LAYOUTs FOLDER
+@import 'layouts/qscar';
