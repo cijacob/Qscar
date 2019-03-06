@@ -9,9 +9,9 @@ class MessagesController < ApplicationController
         if @message.valid? 
             MessageMailer.contact_me(@message).deliver_now
             redirect_to qscar_index_url
-            flash[:notice] = "We have received your message and will be in touch soon!"
+            flash[:notice] = t("form_good")
         else 
-            flash[:notice] = "There was an error sending your message. Please try again."
+            flash[:notice] = t("form_error")
             render :new
         end 
     end 

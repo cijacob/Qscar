@@ -40,6 +40,8 @@ en:
   site_vitrine: "Static website"
   landing-page: "Landing page"
   hebergement: "Hosting"
+  form_good: "We have received your message and will be in touch soon!"
+  form_error: "There was an error sending your message. Please try again."
 
   message_mailer:
     contact_me:

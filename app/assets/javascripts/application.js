@@ -14,10 +14,13 @@
 //= require jquery_ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= //= require foundation
+require_tree .
 
 $(document).ready(function() {
-  
+
+  //Form
+
   $('.input').on("focus blur", function() {
     if ($(this).val().length > 0 || $('.input').is(':focus')) {
       $(this).siblings().addClass('active');
@@ -68,3 +71,5 @@ $(document).ready(function() {
 });
 
 
+
+$(function(){ $(document).foundation(); });

@@ -11,3 +11,5 @@ fr:
   site_vitrine: "Site vitrine"
   landing-page: "Landing page"
   hebergement: "Hébergement"
+  form_good: "Votre message a bien été envoyé, nous revenons vers vous au plus vite"
+  form_error: "Il y a quelques erreurs dans le formulaire"
