@@ -1,3 +1,5 @@
+@import "font-awesome";
+
 body{
   margin: 0;
   padding: 0;
@@ -185,7 +187,7 @@ li{
     transition: all 0.8s ease-in-out;
     color: $grey-dark;
   }
-  button i {
+  btn i {
     top: 0;
     margin-right: 15px;
   }
@@ -210,29 +212,29 @@ li{
     border-bottom: none;
   }
   .input-wrap:before {
-    content: ' ';
+    content: '';
     position: absolute;
-    font-size: 16px;
+    font-size: 15px;
     right: 0;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     -webkit-padding-before: 4px;
     -webkit-padding-end: 3px;
     -webkit-padding-after: 2px;
     -webkit-padding-start: 4px;
     text-align: center;
-    top: 20px;
+    top: 28px;
     background-color: transparent;
     border-radius: 50%;
     color: #fff;
-    font-family: "Material Icons";
+    font-family: 'Font Awesome 5 Free';
     transform: scale(0) rotate(90deg);
     transform-origin: center;
     transition: all 0.4s;
   }
   
   .input-wrap.valid:before {
-    content: '\e5ca';
+    content: '\f058';
     background-color: #4CAF50;
     transform: scale(1) rotate(0deg);
     transition: all 0.8s;
@@ -311,7 +313,7 @@ li{
       opacity: 1;
     }
   }
-  .button{
+  .btn{
     padding: 10px 30px; 
     border-radius: 2px; 
     border: 2px solid $sand;

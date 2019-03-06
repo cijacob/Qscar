@@ -2,6 +2,7 @@
 <% flash.each do |key, value| %>
   <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
+
 <%= form_for @message, url: create_message_path do |f| %>
   <div class="input-wrap">
     <i class="far fa-user"></i>
@@ -19,6 +20,6 @@
     <%= f.text_area :body, id: 'body', placeholder: 'body', class: 'input' %>
   </div> 
   <div>
-    <%= f.submit 'send', class: 'button' %>
+    <%= f.submit 'send', class: 'btn' %>
   </div>
 <% end %>
