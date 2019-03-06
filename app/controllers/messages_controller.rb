@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
             flash[:notice] = t("form_good")
         else 
             flash[:notice] = t("form_error")
-            render :new
+            redirect_to qscar_index_url
         end 
     end 
 

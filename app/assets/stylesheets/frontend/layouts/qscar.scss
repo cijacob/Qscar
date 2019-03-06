@@ -11,6 +11,8 @@ li{
   list-style: none; 
 }
 .container{
+  @media #{$small-only} {
+  }
   width:100%;
   .section{
     height: 200px;
@@ -30,6 +32,9 @@ li{
         flex: 1; 
         align-self: center;
         border-bottom: 1px solid currentColor; 
+      }
+      span{
+        margin: 0 20px; 
       }
     }
   }
@@ -91,8 +96,12 @@ li{
     height: 100%;
     .content_about{
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: column-reverse;
       margin: 3em 0; 
+      @media #{$medium-up}{
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
     }
     .text_content:not(.para_3){
       text-align: center; 
@@ -107,21 +116,32 @@ li{
       border: 2px solid $sand;
       height: 10rem;
       width: 10rem;
-      transform-origin: 50% 50%;
       overflow: hidden;
-      -webkit-box-shadow: 0 10px 10px -3px $grey-dark;
-	    -moz-box-shadow: 0 10px 10px -3px $grey-dark;
-      box-shadow: 0 10px 10px -3px $grey-dark;
-      transform: rotate(45deg);
+      transform-origin: 50% 50%;
       .cadre{
-        width: 230px;
-        height: 200px;
-        transform: rotate(-45deg) translateY(-60px) translate(-20px);
+        width: 14.375rem;
+        height: 12.5rem; 
       }
       .picture_face{
         width: 100%;
         height: auto;
       }
+      @media #{$medium-up} {
+        overflow: hidden;
+        -webkit-box-shadow: 0 10px 10px -3px $grey-dark;
+        -moz-box-shadow: 0 10px 10px -3px $grey-dark;
+        box-shadow: 0 10px 10px -3px $grey-dark;
+        transform: rotate(45deg);
+        .cadre{
+          width: 14.375rem;
+          height: 12.5rem;
+          transform: rotate(-45deg) translateY(-60px) translate(-20px);
+        }
+        .picture_face{
+          width: 100%;
+          height: auto;
+        }
+      } 
     }
     .content_img.grid_img{
       width: 80%;
@@ -241,7 +261,7 @@ li{
   }
   
   .input-wrap.invalid:before {
-    content: '\e14c';
+    content: '\f057';
     background-color: #F44336;
     transform: scale(1) rotate(0deg);
     transition: all 0.8s;
