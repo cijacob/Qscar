@@ -124,8 +124,10 @@ li{
     .text_content.para_1{
       margin: auto; 
       width: 18.750em;
+      padding-top: 1rem;
       @media #{$medium-up}{
         margin: auto 10px;
+        padding-top: 0; 
       }
     }
     .content_img.img_profile{
@@ -167,10 +169,15 @@ li{
     .content_img.grid_img{
       width: 80%;
       display: flex; 
-      justify-content: space-around;
       margin: 2.5rem auto;
       padding: .5rem;
+      flex-direction: column; 
+      @media #{$medium-up}{
+        flex-direction: row;
+        justify-content: space-around;
+      }
       .img{
+        margin: auto;
         border: 1px solid $sand;
         width: 200px ;
         height: 200px; 
@@ -178,8 +185,10 @@ li{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; 
+        box-shadow: 0 10px 10px -3px $grey-dark;
         &:hover{
           border: 1px solid $grey-dark;
+          box-shadow: 0 15px 15px -3px $grey-dark;
         }
       }
     }

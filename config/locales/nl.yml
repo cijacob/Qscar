@@ -2,9 +2,9 @@ nl:
   about_us: "Over ons"
   what_we_do: "Wat we doen?"
   contact_us: "Contact ons"
-  explain_about_us: |
-  Freelance front-end developer </br>
-  avec un gout prononcé pour le design et les détails.
+  explain_about_us_html: |
+    Freelance front-end developer </br>
+    avec un gout prononcé pour le design et les détails.
   explain_our_project: "Ontdek onze verschillde projecten"
   me_contacter: "Contact ons!"
   follow: "Follow ons!"

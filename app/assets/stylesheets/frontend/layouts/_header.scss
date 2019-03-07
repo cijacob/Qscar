@@ -13,7 +13,12 @@
     &.test{
       background-color: rgba(234,231,220,0.4);
       border-bottom: 2px solid $sand; 
-      height: 15%;
+      height: 30%;
+      @media #{$medium-up}{
+        height: 15%;
+      }
+      
+      
     }
   }
   .header_logo{
@@ -36,23 +41,39 @@
       &:hover{
         text-shadow: 0 8.36px 10.896px #c4b59d,0 -2px 1px #fff;
       }
-      &:before, &:after{
+      /*&:before, &:after{
         content: "";
         display: block; 
         position: absolute; 
-        width: 1rem; 
-        height: 1px; 
+        width: 5rem; 
+        height: 5px; 
         background-color: $sand;
       }
+      &:before{
+        margin-top: 40px;
+        margin-left: -70px;
+        transform: rotate(-45deg);
+      }
+      &:after{
+        margin-top: -40px;
+        margin-right: 70px;
+        transform: rotate(-45deg);
+      }*/
     }
   }
   .header_menu{
     ul{
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column; 
+      @media #{$medium-up}{
+        flex-direction: row; 
+        justify-content: flex-end;
+      } 
     }
     li{
-      padding: .5rem 1.5rem 1rem 1.5rem;
+      @media #{$medium-up}{
+        padding: .5rem 1.5rem 1rem 1.5rem;
+      }
       color: $pink-dark;
       a{
         color: $pink-dark;

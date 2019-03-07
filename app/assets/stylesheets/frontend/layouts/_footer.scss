@@ -5,7 +5,9 @@
   display: flex; 
   justify-content: space-around;
   .column{
-    padding: 5rem;
+    @media #{$medium-up}{
+      padding: 5rem;
+    }
     &span{
       padding: 5px 0; 
     }
@@ -16,7 +18,9 @@
     }
   }
   .column-contact-us{
-    flex-grow: 2;
+    @media #{$medium-up} {
+      flex-grow: 2;
+    }
     .inner-column-contact-us{
       display: flex;
       justify-content: space-evenly;
@@ -38,7 +42,9 @@
     }
   }
   .column-follow-us{
-    flex-grow: 1; 
+    @media #{$medium-up} {
+      flex-grow: 1;
+    }
     ul{
       text-align: center;
       li{
