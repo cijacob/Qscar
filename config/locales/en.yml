@@ -31,8 +31,10 @@ en:
   about_us: "About us"
   what_we_do: "What we do?"
   contact_us: "Get in touch"
-  explain_about_us: "Freelance front-end developer avec un gout prononcé pour le design et les détails.
-  J'aime donner vie à tous les projets sur lesquels je travaille."
+  explain_about_us_html: |
+    Freelance front-end developer </br>
+    avec un gout prononcé pour le design et les détails.
+    J'aime donner vie à tous les projets sur lesquels je travaille."
   explain_our_project: "Discover our different projects web"
   me_contacter: "Contact us!"
   follow: "Follow us!"
