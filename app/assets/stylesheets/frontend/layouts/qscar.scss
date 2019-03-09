@@ -192,6 +192,19 @@ li{
         }
       }
     }
+    .discover_more{
+      span.btn{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        a{
+          font-family: "Raleway", sans-serif;
+          color: #D8C3A5;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+      }
+    }
   }
 }
 .check-done{
