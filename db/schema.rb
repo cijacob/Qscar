@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 2019_03_08_215855) do
   end
 
   create_table "projects_technos", id: false, force: :cascade do |t|
-    t.integer "project_id", null: false
-    t.integer "techno_id", null: false
+    t.bigint "project_id", null: false
+    t.bigint "techno_id", null: false
     t.index ["project_id", "techno_id"], name: "index_projects_technos_on_project_id_and_techno_id"
     t.index ["techno_id", "project_id"], name: "index_projects_technos_on_techno_id_and_project_id"
   end

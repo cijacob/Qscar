@@ -1,4 +1,8 @@
 <div class='container'>
+coucou
+<% @projects.each do |pr| %>
+  <%= pr.name %>
+<% end %>
   <div class='section'>
     <div class=title title-projects>
       <span><%= t('our_differents_projects') %></span>
