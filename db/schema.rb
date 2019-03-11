@@ -22,8 +22,6 @@ ActiveRecord::Schema.define(version: 2019_03_08_215855) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "techno_id"
-    t.index ["techno_id"], name: "index_projects_on_techno_id"
   end
 
   create_table "projects_technos", id: false, force: :cascade do |t|
@@ -39,5 +37,4 @@ ActiveRecord::Schema.define(version: 2019_03_08_215855) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "projects", "technos"
 end
