@@ -159,6 +159,9 @@ li{
           width: 14.375rem;
           height: 12.5rem;
           transform: rotate(-45deg) translateY(-60px) translate(-20px);
+          &.prfl_d{
+            transform: rotate(-45deg) translateY(-50px) translate(0px);
+          }
         }
         .picture_face{
           width: 100%;
