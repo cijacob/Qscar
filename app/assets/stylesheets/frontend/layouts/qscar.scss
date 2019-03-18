@@ -254,12 +254,18 @@ li{
     height: 200px;
   }
   .website{
-    fill: $pink-light;
+    fill: $grey-dark;
+    transition: 0.3s;
   }
   .inner_icon{
     text-align: center;
     &:hover .website{
-      fill: $grey-dark;
+      fill: $pink-dark;
+    }
+  }
+  .explain_icon{
+    @media #{$medium-up}{
+      margin-top: -50px; 
     }
   }
 }

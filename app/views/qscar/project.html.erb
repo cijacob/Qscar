@@ -2,7 +2,7 @@
   <span><%= t('what_we_do') %></span>
 </div>
 <div class="content">
-  <div class="text_content para_2">
+ <div class="text_content para_2">
     <span>
       <%= t('explain_our_project') %>
     </span>
@@ -49,26 +49,26 @@
   <div class="category">
     <div class="inner_category">
       <div class="header_category">
-        <div class="title_head landing"><a href="#landing"><%= t('landing_option') %></a></div>
-        <div class="title_head static_web"><a href="#static_web"><%= t('static_option') %></a></div>
-        <div class="title_head dynamic_web"><a href="#dynamic_web"><%= t('dynamic_option') %></a></div>
+        <div class="title_head landing"><a data-content="landing" href="#landing" class="btn-click"><%= t('landing_option') %></a></div>
+        <div class="title_head static_web"><a data-content="static_web" href="#static_web" class="btn-click"><%= t('static_option') %></a></div>
+        <div class="title_head dynamic_web"><a data-content="dynamic_web" href="#dynamic_web" class="btn-click"><%= t('dynamic_option') %></a></div>
       </div>
       <div class="content_category">
-        <div class="innner_content_category" id="landing">
+        <div class="innner_content_category" id="landing" data-content="landing">
           <h5>Landing page option</h5>
           <div class="content_txt">
             <p><%= t("explication_landing") %></p>
           </div>
           <div class="content_img"></div>
         </div>
-        <div class="innner_content_category" id="static_web">
+        <div class="innner_content_category hide" id="static_web" data-content="static_web">
           <h5>Static website option</h5>
           <div class="content_txt">
             <p><%= t("explication_static") %></p>
           </div>
           <div class="content_img"></div>
         </div>
-        <div class="innner_content_category" id="dynamic_web">
+        <div class="innner_content_category hide" id="dynamic_web" data-content="dynamic_web">
           <h5>dynamic website option</h5>
           <div class="content_txt">
             <p><%= t("explication_dynamic") %></p>
