@@ -10,6 +10,8 @@ fr:
   explain_our_project: "Découvrez nos projets"
   me_contacter: "Contactez nous!"
   follow: "Suivez nous!"
+
+
   accompagnement: "Accompagnement"
   advice: "Conseils"
   site_vitrine: "Site vitrine"
@@ -21,6 +23,44 @@ fr:
   explain_icon: "Création, dévelopement et gestion de votre site internet."
   explain_icon_two: "Design, ergonomie, contenu rédactionnel, référencement SEO"
 
+  landing_option: "Landing page"
+  explication_landing: "Parfait pour être présent sur internet et faire une présentation brève de votre activité"
+  static_option: "Site statique"
+  explication_static: ""
+  dynamic_option: "Site dynamique"
+  explication_dynamic: ""
+
+  list_choice_landing: |
+    Une page web de contenu en une langue répondant aux attentes des différents devices
+    Un template conçu pour vous selon l'image de votre marque
+    Un formulaire de contact
+    Vos photos, textes et votre logo
+    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+    Référencement naturel (SEO) sur Google
+  list_choice_static: |
+    Un site web de 3 pages de contenu dans plusieurs langues  répondant aux attentes des différents devices
+    Un template conçu pour vous selon l'image de votre marque
+    Un formulaire de contact
+    Vos photos, textes et votre logo
+    Ajout d'effet dynamique 
+    Liens vers vos réseaux sociaux
+    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+    Référencement naturel (SEO) sur Google
+  list_choice_dynamic: |
+    Un site web d'un nombre illimité de pages de contenu dans plusieurs langues répondant aux attentes des différents devices
+    Un template conçu pour vous selon l'image de votre marque
+    Un formulaire de contact
+    Banner dynamique
+    Possibilité d'avoir des utilisateurs
+    Possibilité de session administrateur
+    Liens vers vos réseaux sociaux
+    Vos photos, textes et votre logo
+    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+    Référencement naturel (SEO) sur Google
+  
   
   our_differents_projects: "Nos différents projets"
   our_client: "Notre client"

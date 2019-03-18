@@ -54,24 +54,43 @@
         <div class="title_head dynamic_web"><a data-content="dynamic_web" href="#dynamic_web" class="btn-click"><%= t('dynamic_option') %></a></div>
       </div>
       <div class="content_category">
-        <div class="innner_content_category" id="landing" data-content="landing">
-          <h5>Landing page option</h5>
+        <div class="innner_content_category">
+          <div class="content_txt">
+          </div>
+        </div>
+        <div class="innner_content_category hide" id="landing" data-content="landing">
+          <h5><%= t('landing_option') %></h5>
           <div class="content_txt">
             <p><%= t("explication_landing") %></p>
+            <ul>
+              <% t(:'list_choice_landing').each_line do |option| %>
+                <li><%= option %></li>
+              <% end %>
+            </ul>
           </div>
           <div class="content_img"></div>
         </div>
         <div class="innner_content_category hide" id="static_web" data-content="static_web">
-          <h5>Static website option</h5>
+          <h5><%= t('static_option') %></h5>
           <div class="content_txt">
             <p><%= t("explication_static") %></p>
+            <ul>
+                <% t(:'list_choice_static').each_line do |option| %>
+                  <li><%= option %></li>  
+                <% end %> 
+            </ul>
           </div>
           <div class="content_img"></div>
         </div>
         <div class="innner_content_category hide" id="dynamic_web" data-content="dynamic_web">
-          <h5>dynamic website option</h5>
+          <h5><%= t('dynamic_option') %></h5>
           <div class="content_txt">
             <p><%= t("explication_dynamic") %></p>
+            <ul>
+              <% t(:'list_choice_dynamic').each_line do |option| %>
+                <li><%= option %></li>
+              <% end %>
+            </ul>
           </div>
           <div class="content_img"></div>
         </div>
