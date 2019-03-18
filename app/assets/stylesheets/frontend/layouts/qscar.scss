@@ -298,12 +298,13 @@ li{
         transition: 0.8s;
       }
     }
-    .title_head a{
+    .title_head span{
       padding: 1rem;
       display: flex;
       color: $grey-dark;
       letter-spacing: 0.1em;
       justify-content: center;
+      cursor: pointer;
       &:focus,
       &:hover{
         color: $pink-dark;

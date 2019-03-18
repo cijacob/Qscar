@@ -76,7 +76,7 @@ $(document).ready(function() {
 
   //Pricetable
 
-  $('.header_category .title_head a').click(function(e){
+  $('.header_category .title_head span').click(function(e){
     e.preventDefault();
     var content = $(this).data('content'); 
     $(".content_category .innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
