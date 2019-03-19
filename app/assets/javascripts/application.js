@@ -20,10 +20,8 @@
 $(document).ready(function() {
 
   $('.header_menu a').on('click', function(){
-    $('html, body').animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    
   });
-
-
   //Form
 
   $('.input').on("focus blur", function() {
@@ -76,12 +74,16 @@ $(document).ready(function() {
 
   //Pricetable
 
-  $('.header_category .title_head span').click(function(e){
+  $('.language a').click(function() {
+    location.reload();
+  });
+
+  $('.header_category .title_head span').on('click', function(e){
     e.preventDefault();
     var content = $(this).data('content'); 
     $(".content_category .innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
       $(this).addClass('hide'); 
-      $('.content_category .innner_content_category[data-content="'+content+'"]').fadeIn('slow').removeClass('hide');
+      $('.content_category .innner_content_category[data-content="' + content + '"]').fadeIn('slow').removeClass('hide');
     })
   })
 });
