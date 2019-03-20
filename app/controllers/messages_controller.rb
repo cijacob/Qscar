@@ -8,8 +8,7 @@ class MessagesController < ApplicationController
 
         if @message.valid? 
             MessageMailer.contact_me(@message).deliver_now
-            redirect_to qscar_index_url
-            flash[:notice] = t("form_good")
+            redirect_to root_path, :notice => t("form_good")
         else 
             flash[:notice] = t("form_error")
             redirect_to qscar_index_url
