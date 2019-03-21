@@ -80,7 +80,6 @@ $(document).ready(function() {
 
   $('.header_category .title_head span').on('click', function(e){
     e.preventDefault();
-    $(this).addClass('coucou');
     var content = $(this).data('content'); 
     $(".content_category .innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
       $(this).addClass('hide'); 

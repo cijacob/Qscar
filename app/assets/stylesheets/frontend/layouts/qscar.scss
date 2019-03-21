@@ -316,6 +316,14 @@ li{
     width: 100%;
     .innner_content_category{
       display: flex;
+      li span{
+        width: 20px; 
+        height: 20px; 
+        background-image: url('qscar_Check.svg');
+        display: inline-flex;
+        padding: 5px;
+        margin: 0.4rem;
+      }
     }
     h5{
       text-align: center; 
