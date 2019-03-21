@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   
-  #get 'technos/index'
   get 'projects/index'
   get 'contact-me', to: 'messages#new', as: 'new_message' 
   post 'contact-me', to: 'messages#create', as: 'create_message'
 
-  
   get 'qscar/index'
   #get 'qscar/about', to: 'qscar#about'
   #get 'qscar/project', to: 'qscar#project'
