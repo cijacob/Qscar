@@ -5,7 +5,6 @@ nl:
   explain_about_us_html: |
     Freelance front-end developer </br>
     avec un gout prononcé pour le design et les détails.
-  explain_our_project: "Ontdek onze verschillde projecten"
   me_contacter: "Contact ons!"
   follow: "Follow ons!"
 
@@ -64,7 +63,7 @@ nl:
     Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
     Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
     Référencement naturel (SEO) sur Google
-  price_from: "From"
+  price_from: "Vanaf"
 
   our_differents_projects: "Onze projects"
   our_client: "Onze klant"
