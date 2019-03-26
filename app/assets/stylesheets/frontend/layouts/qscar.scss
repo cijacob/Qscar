@@ -3,6 +3,7 @@
 body{
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 input:focus, textarea:focus, keygen:focus, select:focus {
 	outline: none;
@@ -13,7 +14,15 @@ li{
 .container{
   @media #{$small-only} {
   }
-  width:100%;
+  width:90%;
+  margin: auto; 
+  margin-bottom: 2rem;
+  height: 100%;
+  margin-top: -60px;
+  background-color: white;
+  opacity: 0.9;
+  box-shadow: 0 15px 15px -3px #8E8D8A;
+  border-radius: 10px; 
   /*background:
     linear-gradient(115deg, transparent 89%, #e8ddcb  0) -53px -21px,
     linear-gradient(-115deg, #cdb380 11%, transparent 0) -53px 129px,
@@ -322,7 +331,10 @@ li{
         background-image: url('qscar_Check.svg');
         display: inline-flex;
         padding: 5px;
-        margin: 0.4rem;
+        margin: 0.4rem; 
+      }
+      p{
+        font-size: 16px; 
       }
       h5{
         text-align: center; 

@@ -74,11 +74,12 @@ $(document).ready(function() {
 
   //Pricetable
 
-  $('.language a').click(function() {
-    location.reload();
-  });
+  //$('.language a').click(function() {
+    //location.reload();
+  //});
 
-  $('.header_category .title_head span').on('click', function(e){
+  $('.header_category .title_head span').on('click',  function(e){
+    console.log('coucou');
     e.preventDefault();
     var content = $(this).data('content'); 
     $(".content_category .innner_content_category:not('.hide')").stop().fadeOut('fast', function(){

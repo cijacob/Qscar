@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   root 'qscar#index'
 
   scope "/:locale", locale: /en|fr|nl/ do 
-    #resources :qscar
+    resources :qscar
     resources :projects, only:[:index]
     resources :technos, only:[:index]
   end 
