@@ -18,19 +18,11 @@ li{
   margin: auto; 
   margin-bottom: 2rem;
   height: 100%;
-  margin-top: -60px;
+  margin-top: -52px;
   background-color: white;
   opacity: 0.9;
   box-shadow: 0 15px 15px -3px #8E8D8A;
   border-radius: 10px; 
-  /*background:
-    linear-gradient(115deg, transparent 89%, #e8ddcb  0) -53px -21px,
-    linear-gradient(-115deg, #cdb380 11%, transparent 0) -53px 129px,
-    linear-gradient(-115deg, transparent 89%, #036564 0) 97px -21px,
-    linear-gradient(115deg, #033649 11%, transparent 0) 97px 129px; 
-  background-color: #fff;
-  background-size: 150px 150px;
-  background-repeat: repeat;*/
   .section{
     height: 200px;
     .title{
@@ -325,6 +317,21 @@ li{
     width: 100%;
     .innner_content_category{
       display: flex;
+      .inner_content{
+        p{
+          width: 100%; 
+        }
+        display:flex;
+        flex-direction: column; 
+        @media #{$medium-up}{
+          flex-direction: row;
+          flex-flow: row wrap;
+        } 
+      & >*{
+        padding: 10px;
+        flex: 1 100%;
+      }
+      }
       li span{
         width: 20px; 
         height: 20px; 

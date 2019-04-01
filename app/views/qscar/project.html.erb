@@ -44,9 +44,9 @@
   <div class="category">
     <div class="inner_category">
       <div class="header_category">
-        <div class="title_head landing"><span data-content="landing" class="btn-click"><%= t('landing_option') %></span></div>
-        <div class="title_head static_web"><span data-content="static_web" class="btn-click"><%= t('static_option') %></span></div>
-        <div class="title_head dynamic_web"><span data-content="dynamic_web" class="btn-click"><%= t('dynamic_option') %></span></div>
+        <div class="title_head landing"><span onclick="myFunction()" data-content="landing" class="btn-click"><%= t('landing_option') %></span></div>
+        <div class="title_head static_web"><span onclick="myFunction()" data-content="static_web" class="btn-click"><%= t('static_option') %></span></div>
+        <div class="title_head dynamic_web"><span onclick="myFunction()" data-content="dynamic_web" class="btn-click"><%= t('dynamic_option') %></span></div>
       </div>
       <div class="content_category">
         <div class="innner_content_category">
@@ -55,53 +55,59 @@
         </div>
         <div class="innner_content_category hide" data-content="landing">
           <h5><%= t('landing_option') %></h5>
-          <div class="content_txt">
-            <p><%= t("explication_landing") %></p>
-            <ul>
-              <% t(:'list_choice_landing').each_line do |option| %>
-                <li><span></span><%= option %></li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="content_img"></div>
-          <div class="content_from">
-            <div class="price btn-price">
-              <span><%= t('price_from') %> € 700 </span>
+          <div class="inner_content">
+            <div class="content_txt">
+              <p><%= t("explication_landing") %></p>
+              <ul>
+                <% t(:'list_choice_landing').each_line do |option| %>
+                  <li><span></span><%= option %></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="content_img"></div>
+            <div class="content_from">
+              <div class="price btn-price">
+                <span><%= t('price_from') %> € 700 </span>
+              </div>
             </div>
           </div>
         </div>
         <div class="innner_content_category hide" data-content="static_web">
           <h5><%= t('static_option') %></h5>
-          <div class="content_txt">
-            <p><%= t("explication_static") %></p>
-            <ul>
-              <% t(:'list_choice_static').each_line do |option| %>
-                <li><span></span><%= option %></li>  
-              <% end %> 
-            </ul>
-          </div>
-          <div class="content_img"></div>
-          <div class="content_from">
-            <div class="price btn-price">
-              <span><%= t('price_from') %> € 900 </span>
+          <div class="inner_content">
+            <div class="content_txt">
+              <p><%= t("explication_static") %></p>
+              <ul>
+                <% t(:'list_choice_static').each_line do |option| %>
+                  <li><span></span><%= option %></li>  
+                <% end %> 
+              </ul>
+            </div>
+            <div class="content_img"></div>
+            <div class="content_from">
+              <div class="price btn-price">
+                <span><%= t('price_from') %> € 900 </span>
+              </div>
             </div>
           </div>
         </div>
         <div class="innner_content_category hide" id="dynamic_web" data-content="dynamic_web">
           <h5><%= t('dynamic_option') %></h5>
-          <div class="content_txt">
-            <p><%= t("explication_dynamic") %></p>
-            <ul>
-              <% t(:'list_choice_dynamic').each_line do |option| %>
-                <li><span></span><%= option %></li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="content_img"></div>
-          <div class="content_from">
-            <a class="price btn-price">
-              <span><%= t('price_from') %> € 1500 </span>
-            </a>
+          <div class="inner_content">
+            <div class="content_txt">
+              <p><%= t("explication_dynamic") %></p>
+              <ul>
+                <% t(:'list_choice_dynamic').each_line do |option| %>
+                  <li><span></span><%= option %></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="content_img"></div>
+            <div class="content_from">
+              <a class="price btn-price">
+                <span><%= t('price_from') %> € 1500 </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

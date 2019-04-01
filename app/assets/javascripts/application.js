@@ -78,17 +78,25 @@ $(document).ready(function() {
     //location.reload();
   //});
 
-  $('.header_category .title_head span').on('click',  function(e){
-    console.log('coucou');
-    e.preventDefault();
-    var content = $(this).data('content'); 
-    $(".content_category .innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
-      $(this).addClass('hide'); 
-      $('.content_category .innner_content_category[data-content="' + content + '"]').fadeIn('slow').removeClass('hide');
-    })
-  })
+  
 });
 
 
+$(document).ready(function(){
+  $('.title_head span').on('click',  function(e){
+    e.preventDefault();
+    var content = $(this).data('content'); 
+    $(".innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
+      $(this).addClass('hide'); 
+      $('.innner_content_category[data-content="' + content + '"]').fadeIn('slow').removeClass('hide');
+    })
+  })
+})
+
+
+function myFunction(){
+  var element = document.querySelector(".btn-click");
+  element.classList.add('coucou');
+}
 
 $(function(){ $(document).foundation(); });
