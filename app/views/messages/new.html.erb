@@ -1,18 +1,18 @@
 <%= form_tag(create_message_path, method: "post") do %>
   <div class="input-wrap">
     <i class="far fa-user"></i>
-    <label for="name">Name</label>
-    <%= text_field_tag :name, id: 'name', placeholder: 'name', class: 'input' %>
+    <%= label_tag(:name, 'Name') %>
+    <%= text_field_tag :name, "", placeholder: 'name', class: 'input'  %>
   </div>
   <div class="input-wrap">
     <i class="far fa-envelope"></i>
-    <label for="email">Email</label>
-    <%= email_field_tag :email, id: 'email', placeholder: 'email', class: 'input' %>
+    <%= label_tag(:email, 'Email') %>
+    <%= email_field_tag :email, "", placeholder: 'body', class: 'input'%>
   </div>
   <div class="input-wrap">
     <i class="far fa-edit"></i>
-    <label for="body">Body</label>
-    <%= text_area_tag :body, id: 'body', placeholder: 'body', class: 'input' %>
+    <%= label_tag(:body, 'Body') %>
+    <%= text_area_tag :body, "", placeholder: 'body', class: 'input' %>
   </div> 
   <div>
     <%= submit_tag 'send', class: 'btn' %>
