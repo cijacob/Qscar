@@ -244,12 +244,18 @@ li{
       padding: 10px 25px;
       color: $grey-dark; 
       cursor: pointer;
-      .seo{
+      .seo, 
+      .advice, 
+      .hosting, 
+      .creativity{
         fill: $pink-dark;
         opacity: 0;
         transition: 0.5s ease-in-out;
       }
-      &:hover .seo{
+      &:hover .seo, 
+      &:hover .advice, 
+      &:hover .hosting, 
+      &:hover .creativity{
         opacity: 1;
       }
       @media #{$medium-up}{
