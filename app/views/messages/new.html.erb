@@ -1,20 +1,20 @@
-<%= form_for @message, url: create_message_path do |f| %>
+<%= form_tag(create_message_path, method: "post") do %>
   <div class="input-wrap">
     <i class="far fa-user"></i>
     <label for="name">Name</label>
-    <%= f.text_field :name, id: 'name', placeholder: 'name', class: 'input' %>
+    <%= text_field_tag :name, id: 'name', placeholder: 'name', class: 'input' %>
   </div>
   <div class="input-wrap">
     <i class="far fa-envelope"></i>
     <label for="email">Email</label>
-    <%= f.email_field :email, id: 'email', placeholder: 'email', class: 'input' %>
+    <%= email_field_tag :email, id: 'email', placeholder: 'email', class: 'input' %>
   </div>
   <div class="input-wrap">
     <i class="far fa-edit"></i>
     <label for="body">Body</label>
-    <%= f.text_area :body, id: 'body', placeholder: 'body', class: 'input' %>
+    <%= text_area_tag :body, id: 'body', placeholder: 'body', class: 'input' %>
   </div> 
   <div>
-    <%= f.submit 'send', class: 'btn' %>
+    <%= submit_tag 'send', class: 'btn' %>
   </div>
 <% end %>

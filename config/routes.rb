@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
   
   get 'projects/index'
-  get 'contact-me', to: 'messages#new', as: 'new_message' 
-  post 'contact-me', to: 'messages#create', as: 'create_message'
+  get 'contact-form', to: 'messages#new', as: 'new_message' 
+  post 'send-form', to: 'messages#create', as: 'create_message'
 
   get 'qscar/index'
-  #get 'qscar/about', to: 'qscar#about'
-  #get 'qscar/project', to: 'qscar#project'
   root 'qscar#index'
 
   scope "/:locale", locale: /en|fr|nl/ do 

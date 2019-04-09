@@ -1,22 +1,26 @@
 class MessagesController < ApplicationController
-    def new
-        @message = Message.new
-    end 
+    
+    def new 
+    end  
 
     def create
-        @message = Message.new(message_params)
+        Struct.new('Message', :name, :email, :body)
 
-        if @message.valid? 
-            MessageMailer.contact_me(@message).deliver_now
-            redirect_to root_path, :notice => t("form_good")
-        else 
-            flash[:notice] = t("form_error")
-            redirect_to qscar_index_url
+        message = Struct::Message.new(
+            message_params[:name], 
+            message_params[:email], 
+            message_params[:body]
+        )
+
+        MessageMailer.with(message: message).reception_mail.deliver_now
+        
+        respond_to do |format|
+            format.html {redirect_to root_path, :notice => t("form_good")}
         end 
     end 
 
     private 
     def message_params
-        params.require(:message).permit(:name, :email, :body)
+        params.permit(:name, :email, :body)
     end
 end
