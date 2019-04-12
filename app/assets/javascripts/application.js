@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-  $('.title_head span').on('click', function(){
+  $('.title_head span').on('click', function(e){
     e.preventDefault();
     var content = $(this).data('content'); 
     $(".innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
