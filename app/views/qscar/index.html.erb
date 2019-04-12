@@ -16,6 +16,9 @@
         </div>
         <div class="panel panel_right">
           <div class="form">
+            <% flash.each do |key, value| %>
+              <div class="alert alert-<%= key %>"><%= value %></div>
+            <% end %>
             <%= render :template => 'messages/new' %>
           </div>
         </div>
