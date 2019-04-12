@@ -19,9 +19,6 @@
 
 $(document).ready(function() {
 
-  $('.header_menu a').on('click', function(){
-    
-  });
   //Form
 
   $('.input').on("focus blur", function() {
@@ -70,20 +67,12 @@ $(document).ready(function() {
       $('.ending').addClass('showed');
       event.preventDefault();
     });
-  });
-
-  //Pricetable
-
-  //$('.language a').click(function() {
-    //location.reload();
-  //});
-
-  
+  }); 
 });
 
 
 $(document).ready(function(){
-  $('.title_head span').on('click',  function(e){
+  $('.title_head span').on('click', function(){
     e.preventDefault();
     var content = $(this).data('content'); 
     $(".innner_content_category:not('.hide')").stop().fadeOut('fast', function(){
