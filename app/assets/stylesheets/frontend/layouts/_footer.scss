@@ -4,6 +4,10 @@
   font-family: $font-raleway;
   display: flex; 
   justify-content: space-around;
+  flex-flow: column wrap;
+  @media #{$medium-up}{
+    flex-flow: row nowrap;
+  }
   .column{
     @media #{$medium-up}{
       padding: 5rem;

@@ -226,7 +226,6 @@ li{
 }
 .check-done{
   display:flex;
-  height: 200px;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
@@ -234,6 +233,9 @@ li{
   padding: 0 20px;
   text-align: center;
   margin: 50px 0; 
+  @media #{$medium-up}{
+    height: 200px;
+  }
   ul{
     @media #{$medium-up}{
       flex-direction: row;
