@@ -7,7 +7,7 @@ body{
 }
 
 body:before {
-  background: url(antenna-business-cellular.jpg);
+  background: url();
   content: "";
   position: absolute;
   background-size: cover;
@@ -25,7 +25,7 @@ li{
 .container{
   @media #{$small-only} {
   }
-  width:90%;
+  width:100%;
   margin: auto; 
   margin-bottom: 2rem;
   height: 100%;
@@ -126,6 +126,7 @@ li{
       @media #{$medium-up}{
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 40px;
       }
     }
     .text_content:not(.para_3){
@@ -133,7 +134,8 @@ li{
       font-family: $font-raleway; 
       color: $grey-dark; 
     }
-    .text_content.para_1{
+    .text_content.para_1,
+    .text_content.para_2{
       margin: auto; 
       width: 18.750em;
       padding-top: 1rem;

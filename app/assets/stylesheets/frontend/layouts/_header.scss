@@ -4,12 +4,11 @@
   background-image: url('header_img.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100vh;
   .inner_header{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    width: 100%;
     &.test{
       background-color: rgba(234,231,220,0.4);
       border-bottom: 2px solid $sand; 
@@ -26,10 +25,10 @@
     justify-content: center;
     position: absolute;
     width: 100%;
-    top: 25%; 
+    top: 50%; 
     a{
       color: $pink-dark;
-      font-size: 80px;
+      font-size: 6rem;
       line-height: 80px;
       font-weight: 900;
       font-family: $font-raleway;
