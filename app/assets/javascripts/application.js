@@ -16,9 +16,26 @@
 //= require turbolinks
 //= require foundation
 //= require_tree .
+//= require test
+
 
 $(document).ready(function() {
+  console.log("inside function dans app.js");
+  $('.section_link a').on("click",function (e) {
+   
+    e.preventDefault();
 
+    var target = this.hash,
+        $target = $(target);
+
+
+    $('html, body').stop().animate( {
+      'scrollTop': $target.offset().top-40
+    }, 900, 'swing', function () {
+      window.location.hash = target;
+    } );
+
+});
   //Form
 
   $('.input').on("focus blur", function() {
@@ -89,3 +106,6 @@ function myFunction(){
 }
 
 $(function(){ $(document).foundation(); });
+
+
+
