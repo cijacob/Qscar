@@ -19,7 +19,7 @@
 //= require test
 
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
   console.log("inside function dans app.js");
   $('.section_link a').on("click",function (e) {
    
@@ -88,7 +88,7 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
   $('.title_head span').on('click', function(e){
     e.preventDefault();
     var content = $(this).data('content'); 
