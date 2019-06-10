@@ -1,77 +1,83 @@
 nl:
-  about_us: "Over ons"
-  what_we_do: "Wat we doen?"
-  contact_us: "Contact ons"
-  explain_about_us_html: |
-    Freelance front-end developer </br>
-    avec un gout prononcé pour le design et les détails.
-  explain_about_us_d_html: |
-    "It's all about the people"
-    Retail & Hospitality - Wine & Food Lover - Like to start from scratch - 
-    Customer Service / Journey - Intrapreneur - People Development / Coaching - 
-    Event managment/ Change managment / Business Development - 
-    Like to work with people, let them make the diffrence!
-  me_contacter: "Contact ons!"
-  follow: "Follow ons!"
+  qscar:
+    index:
+      about_us: "Over ons"
+      what_we_do: "Wat we doen?"
+      contact_us: "Contact ons"
+      NL: "nl"
+      FR: "fr"
+      EN: "en"
 
-  NL: "nl"
-  FR: "fr"
-  EN: "en"
+    about:
+      explain_about_us_html: |
+        Freelance front-end developer </br>
+        avec un gout prononcé pour le design et les détails.
+      explain_about_us_d_html: |
+        "It's all about the people"
+        Retail & Hospitality - Wine & Food Lover - Like to start from scratch - 
+        Customer Service / Journey - Intrapreneur - People Development / Coaching - 
+        Event managment/ Change managment / Business Development - 
+        Like to work with people, let them make the diffrence!
 
-  strategie: "Strategie"
-  creativity: "Creativity"
-  advice: "advies"
-  conception_realisation: "Conception & Réalisatie"
-  site_vitrine: "Static website"
-  landing-page: "Landing page"
-  hebergement: "Production, mise en ligne & hébergement"
+    project: 
+      explain_icon: "Création, dévelopement et gestion de votre site internet."
+      explain_icon_two: "Design, ergonomie, contenu rédactionnel, référencement SEO"
+      strategie: "Strategie"
+      creativity: "Creativity"
+      advice: "advies"
+      conception_realisation: "Conception & Réalisatie"
+      site_vitrine: "Static website"
+      landing-page: "Landing page"
+      hebergement: "Production, mise en ligne & hébergement"
+      landing_option: "Landing page"
+      explication_landing: "Parfait pour être présent sur internet et faire une présentation brève de votre activité"
+      static_option: "Website static"
+      explication_static: ""
+      dynamic_option: "Website dynamic"
+      explication_dynamic: ""
+      price_from: "Vanaf"
+      list_choice_landing: |
+        Une page web de contenu en une langue répondant aux attentes des différents devices
+        Un template conçu pour vous selon l'image de votre marque
+        Un formulaire de contact
+        Vos photos, textes et votre logo
+        Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+        Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+        Référencement naturel (SEO) sur Google
+      list_choice_static: |
+        Un site web de 3 pages de contenu dans plusieurs langues  répondant aux attentes des différents devices
+        Un template conçu pour vous selon l'image de votre marque
+        Un formulaire de contact
+        Vos photos, textes et votre logo
+        Ajout d'effet dynamique 
+        Liens vers vos réseaux sociaux
+        Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+        Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+        Référencement naturel (SEO) sur Google
+      list_choice_dynamic: |
+        Un site web d'un nombre illimité de pages de contenu dans plusieurs langues répondant aux attentes des différents devices
+        Un template conçu pour vous selon l'image de votre marque
+        Un formulaire de contact
+        Banner dynamique
+        Possibilité d'avoir des utilisateurs
+        Possibilité de session administrateur
+        Liens vers vos réseaux sociaux
+        Vos photos, textes et votre logo
+        Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+        Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+        Référencement naturel (SEO) sur Google
+    
+    discover:
+      our_differents_projects: "Onze projects"
+      our_client: "Onze klant"
+    
+    footer:
+      me_contacter: "Contact ons!"
+      follow: "Follow ons!"
 
-  form_good: "We have received your message and will be in touch soon!"
-  form_error: "There was an error sending your message. Please try again."
-
-  explain_icon: "Création, dévelopement et gestion de votre site internet."
-  explain_icon_two: "Design, ergonomie, contenu rédactionnel, référencement SEO"
-
-  landing_option: "Landing page"
-  explication_landing: "Parfait pour être présent sur internet et faire une présentation brève de votre activité"
-  static_option: "Website static"
-  explication_static: ""
-  dynamic_option: "Website dynamic"
-  explication_dynamic: ""
-
-  list_choice_landing: |
-    Une page web de contenu en une langue répondant aux attentes des différents devices
-    Un template conçu pour vous selon l'image de votre marque
-    Un formulaire de contact
-    Vos photos, textes et votre logo
-    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
-    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
-    Référencement naturel (SEO) sur Google
-  list_choice_static: |
-    Un site web de 3 pages de contenu dans plusieurs langues  répondant aux attentes des différents devices
-    Un template conçu pour vous selon l'image de votre marque
-    Un formulaire de contact
-    Vos photos, textes et votre logo
-    Ajout d'effet dynamique 
-    Liens vers vos réseaux sociaux
-    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
-    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
-    Référencement naturel (SEO) sur Google
-  list_choice_dynamic: |
-    Un site web d'un nombre illimité de pages de contenu dans plusieurs langues répondant aux attentes des différents devices
-    Un template conçu pour vous selon l'image de votre marque
-    Un formulaire de contact
-    Banner dynamique
-    Possibilité d'avoir des utilisateurs
-    Possibilité de session administrateur
-    Liens vers vos réseaux sociaux
-    Vos photos, textes et votre logo
-    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
-    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
-    Référencement naturel (SEO) sur Google
-  price_from: "Vanaf"
-
-  our_differents_projects: "Onze projects"
-  our_client: "Onze klant"
+    form:
+      form_good: "We have received your message and will be in touch soon!"
+      form_error: "There was an error sending your message. Please try again."
+  
 
   

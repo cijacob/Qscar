@@ -1,111 +1,82 @@
-
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
-  about_us: "About us"
-  what_we_do: "What we do?"
-  contact_us: "Get in touch"
-  explain_about_us_html: |
-    Freelance front-end developer </br>
-    avec un gout prononcé pour le design et les détails.
-    J'aime donner vie à tous les projets sur lesquels je travaille."
-  explain_about_us_d_html: |
-    It's all about the people </br>
-    Retail & Hospitality - Wine & Food Lover - Like to start from scratch - </br>
-    Customer Service / Journey - Intrapreneur - People Development / Coaching - </br>
-    Event managment/ Change managment / Business Development - </br>
-    Like to work with people, let them make the diffrence!
+  qscar:
+    index:
+      contact_us: "Get in touch"
+      about_us: "About us"
+      what_we_do: "What we do?"
+      NL: "nl"
+      FR: "fr"
+      EN: "en"
 
-  me_contacter: "Contact us!"
-  follow: "Follow us!"
+    about:
+      explain_about_us_html: |
+        Freelance front-end developer </br>
+        with a sharp eye for design and details.
+        I love to give life to all projects on I'm working.
+      explain_about_us_d_html: |
+        "It's all about the people" </br>
+        Like to start from scratch - </br>
+        Customer Service / Journey - Intrapreneur - People Development / Coaching - </br>
+        Event managment/ Change managment / Business Development - </br>
+        Like to work with people, let them make the diffrence!
 
-  strategie: "Strategy"
-  creativity: "Creativity"
-  conception_realisation: "Conception & Realisation"
-  site_vitrine: "Static website"
-  landing-page: "Landing page"
-  hebergement: "Production, on-line & hosting"
-  advice: "Advices"
+    project:
+      explain_icon: "Creation, development and gestion of your website."
+      explain_icon_two: "Design, ergonomy, content and SEO"
+      strategie: "Strategy"
+      creativity: "Creativity"
+      conception_realisation: "Conception & Realisation"
+      site_vitrine: "Static website"
+      landing-page: "Landing page"
+      hebergement: "Production, on-line & hosting"
+      advice: "Advices"
+      landing_option: "Landing page"
+      explication_landing: "Parfait pour être présent sur internet et faire une présentation brève de votre activité"
+      price_from: "From"
+      static_option: "Static website"
+      explication_static: ""
+      dynamic_option: "Dynamic website"
+      explication_dynamic: ""
+      list_choice_landing: |
+        Une page web de contenu en une langue répondant aux attentes des différents devices
+        Un template conçu pour vous selon l'image de votre marque
+        Un formulaire de contact
+        Vos photos, textes et votre logo
+        Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+        Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+        Référencement naturel (SEO) sur Google
+      list_choice_static: |
+        Un site web de 3 pages de contenu dans plusieurs langues  répondant aux attentes des différents devices
+        Un template conçu pour vous selon l'image de votre marque
+        Un formulaire de contact
+        Vos photos, textes et votre logo
+        Ajout d'effet dynamique 
+        Liens vers vos réseaux sociaux
+        Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+        Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+        Référencement naturel (SEO) sur Google
+      list_choice_dynamic: |
+        Un site web d'un nombre illimité de pages de contenu dans plusieurs langues répondant aux attentes des différents devices
+        Un template conçu pour vous selon l'image de votre marque
+        Un formulaire de contact
+        Banner dynamique
+        Possibilité d'avoir des utilisateurs
+        Possibilité de session administrateur
+        Liens vers vos réseaux sociaux
+        Vos photos, textes et votre logo
+        Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
+        Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
+        Référencement naturel (SEO) sur Google
 
+    discover:
+      our_differents_projects: "Our differents projects"
+      our_client: "Our client"
 
-  form_good: "We have received your message and will be in touch soon!"
-  form_error: "There was an error sending your message. Please try again."
+    footer:
+      me_contacter: "Contact us!"
+      follow: "Follow us!"
 
-  NL: "nl"
-  FR: "fr"
-  EN: "en"
+    form:
+      form_good: "We have received your message and will be in touch soon!"
+      form_error: "There was an error sending your message. Please try again."
   
-  message_mailer:
-    contact_me:
-      subject: ""
-
-  explain_icon: "Creation, development and gestion of your website."
-  explain_icon_two: "Design, ergonomy, content and SEO"
-
-  landing_option: "Landing page"
-  explication_landing: "Parfait pour être présent sur internet et faire une présentation brève de votre activité"
-  static_option: "Static website"
-  explication_static: ""
-  dynamic_option: "Dynamic website"
-  explication_dynamic: ""
-
-  list_choice_landing: |
-    Une page web de contenu en une langue répondant aux attentes des différents devices
-    Un template conçu pour vous selon l'image de votre marque
-    Un formulaire de contact
-    Vos photos, textes et votre logo
-    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
-    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
-    Référencement naturel (SEO) sur Google
-  list_choice_static: |
-    Un site web de 3 pages de contenu dans plusieurs langues  répondant aux attentes des différents devices
-    Un template conçu pour vous selon l'image de votre marque
-    Un formulaire de contact
-    Vos photos, textes et votre logo
-    Ajout d'effet dynamique 
-    Liens vers vos réseaux sociaux
-    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
-    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
-    Référencement naturel (SEO) sur Google
-  list_choice_dynamic: |
-    Un site web d'un nombre illimité de pages de contenu dans plusieurs langues répondant aux attentes des différents devices
-    Un template conçu pour vous selon l'image de votre marque
-    Un formulaire de contact
-    Banner dynamique
-    Possibilité d'avoir des utilisateurs
-    Possibilité de session administrateur
-    Liens vers vos réseaux sociaux
-    Vos photos, textes et votre logo
-    Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
-    Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
-    Référencement naturel (SEO) sur Google
-  price_from: "From"
-
-  our_differents_projects: "Our differents projects"
-  our_client: "Our client"

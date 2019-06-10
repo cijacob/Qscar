@@ -1,5 +1,5 @@
 <div class=title>
-  <span><%= t('what_we_do') %></span>
+  <span><%= t('qscar.index.what_we_do') %></span>
 </div>
 <div class="content">
   <div class="icon">
@@ -17,8 +17,8 @@
         </switch>
       </svg>
       <div class="explain_icon">
-        <p><%= t('explain_icon') %></p>
-        <p><%= t('explain_icon_two') %></p>
+        <p><%= t('qscar.project.explain_icon') %></p>
+        <p><%= t('qscar.project.explain_icon_two') %></p>
       </div>
     </div>
   </div>
@@ -26,9 +26,9 @@
   <div class="category">
     <div class="inner_category">
       <div class="header_category">
-        <div class="title_head landing"><span onclick="myFunction()" data-content="landing" class="btn-click"><%= t('landing_option') %></span></div>
-        <div class="title_head static_web"><span onclick="myFunction()" data-content="static_web" class="btn-click"><%= t('static_option') %></span></div>
-        <div class="title_head dynamic_web"><span onclick="myFunction()" data-content="dynamic_web" class="btn-click"><%= t('dynamic_option') %></span></div>
+        <div class="title_head landing"><span data-content="landing" class="btn-click"><%= t('qscar.project.landing_option') %></span></div>
+        <div class="title_head static_web"><span data-content="static_web" class="btn-click"><%= t('qscar.project.static_option') %></span></div>
+        <div class="title_head dynamic_web"><span data-content="dynamic_web" class="btn-click"><%= t('qscar.project.dynamic_option') %></span></div>
       </div>
       <div class="content_category">
         <div class="innner_content_category">
@@ -36,12 +36,12 @@
           </div>
         </div>
         <div class="innner_content_category hide" data-content="landing">
-          <h5><%= t('landing_option') %></h5>
+          <h5><%= t('qscar.project.landing_option') %></h5>
           <div class="inner_content">
             <div class="content_txt">
-              <p><%= t("explication_landing") %></p>
+              <p><%= t("qscar.project.explication_landing") %></p>
               <ul>
-                <% t(:'list_choice_landing').each_line do |option| %>
+                <% t(:'qscar.project.list_choice_landing').each_line do |option| %>
                   <li><span></span><%= option %></li>
                 <% end %>
               </ul>
@@ -49,18 +49,18 @@
             <div class="content_img"></div>
             <div class="content_from">
               <div class="price btn-price">
-                <span><%= t('price_from') %> € 700 </span>
+                <span><%= t('qscar.project.price_from') %> € 700 </span>
               </div>
             </div>
           </div>
         </div>
         <div class="innner_content_category hide" data-content="static_web">
-          <h5><%= t('static_option') %></h5>
+          <h5><%= t('qscar.project.static_option') %></h5>
           <div class="inner_content">
             <div class="content_txt">
-              <p><%= t("explication_static") %></p>
+              <p><%= t("qscar.project.explication_static") %></p>
               <ul>
-                <% t(:'list_choice_static').each_line do |option| %>
+                <% t(:'qscar.project.list_choice_static').each_line do |option| %>
                   <li><span></span><%= option %></li>  
                 <% end %> 
               </ul>
@@ -68,18 +68,18 @@
             <div class="content_img"></div>
             <div class="content_from">
               <div class="price btn-price">
-                <span><%= t('price_from') %> € 900 </span>
+                <span><%= t('qscar.project.price_from') %> € 900 </span>
               </div>
             </div>
           </div>
         </div>
         <div class="innner_content_category hide" id="dynamic_web" data-content="dynamic_web">
-          <h5><%= t('dynamic_option') %></h5>
+          <h5><%= t('qscar.project.dynamic_option') %></h5>
           <div class="inner_content">
             <div class="content_txt">
-              <p><%= t("explication_dynamic") %></p>
+              <p><%= t("qscar.project.explication_dynamic") %></p>
               <ul>
-                <% t(:'list_choice_dynamic').each_line do |option| %>
+                <% t(:'qscar.project.list_choice_dynamic').each_line do |option| %>
                   <li><span></span><%= option %></li>
                 <% end %>
               </ul>
@@ -87,7 +87,7 @@
             <div class="content_img"></div>
             <div class="content_from">
               <a class="price btn-price">
-                <span><%= t('price_from') %> € 1500 </span>
+                <span><%= t('qscar.project.price_from') %> € 1500 </span>
               </a>
             </div>
           </div>
@@ -97,7 +97,7 @@
   </div>
   <div class="discover_more">
     <span class="btn">
-      <%= link_to t('discover_more'), projects_index_path %>
+      <%= link_to t('qscar.project.discover_more'), projects_index_path %>
     </span>
   </div>
 </div>

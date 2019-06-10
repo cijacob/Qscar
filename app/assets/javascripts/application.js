@@ -99,12 +99,6 @@ $(document).on('turbolinks:load', function(){
   })
 })
 
-
-function myFunction(){
-  var element = document.querySelector(".btn-click");
-  element.classList.add('coucou');
-}
-
 $(function(){ $(document).foundation(); });
 
 

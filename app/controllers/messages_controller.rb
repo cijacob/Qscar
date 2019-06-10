@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
     MessageMailer.with(message: message).reception_mail.deliver_now
     
     respond_to do |format|
-      format.html {redirect_to root_path, :notice => t("form_good")}
+      format.html {redirect_to root_path, :notice => t("qscar.form.form_good")}
     end 
   end 
 
