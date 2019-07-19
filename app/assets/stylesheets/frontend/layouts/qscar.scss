@@ -29,7 +29,6 @@ li{
   margin: auto; 
   margin-bottom: 2rem;
   height: 100%;
-  margin-top: -52px;
   background-color: white;
   opacity: 0.9;
   box-shadow: 0 15px 15px -3px #8E8D8A;
@@ -45,14 +44,14 @@ li{
       font-size: 20px;
       letter-spacing: 0.1em;
       margin-bottom: 30px;
-      &:before, 
+      /*&:before, 
       &:after{
         display: block; 
         content: "";
         flex: 1; 
         align-self: center;
         border-bottom: 1px solid currentColor; 
-      }
+      }*/
       span{
         margin: 0 20px; 
       }

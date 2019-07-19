@@ -20,7 +20,6 @@
 
 
 $(document).on('turbolinks:load', function() {
-  console.log("inside function dans app.js");
   $('.section_link a').on("click",function (e) {
    
     e.preventDefault();

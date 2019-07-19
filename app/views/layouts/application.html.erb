@@ -17,8 +17,13 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    <header>
+      <%= render 'layouts/header' %>
+    </header>
     <%= yield %>
-    <%= render 'layouts/footer' %>
+    <footer>
+      <%= render 'layouts/footer' %>
+      <%= render 'layouts/copyright' %>
+    </footer>
   </body>
 </html>
