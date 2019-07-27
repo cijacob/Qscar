@@ -116,7 +116,7 @@ li{
     .content_about{
       display: flex;
       flex-direction: column-reverse;
-      margin: 3em 0; 
+      margin: 3em 0;  
       &.second{
         @media #{$small-only}{
           flex-direction: column;
@@ -149,6 +149,15 @@ li{
         justify-content: center;
         margin: auto;
       }
+      animation: 3s linear 1s 1 profileImg;
+        @keyframes profileImg{
+          0%{
+            opacity: 0;
+          }
+          100%{
+            opacity: 1;
+          }
+        }
       border: 2px solid $sand;
       height: 10rem;
       width: 10rem;
@@ -280,7 +289,8 @@ li{
   display: flex;
   justify-content: center; 
   @media #{$medium-up}{
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: flex-start; 
   }
   svg{
     height: 200px;

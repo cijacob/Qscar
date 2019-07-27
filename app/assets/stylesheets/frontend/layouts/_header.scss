@@ -142,7 +142,7 @@
         display: flex; 
         width: 300px; 
         height: 400px;
-        /*background-image: url('qscar_header.jpg');
+        background-image: url('qscar_header.jpg');
         background-position: center;
         background-size: cover;
         .header__inner_img{
@@ -151,31 +151,11 @@
           width: 250px; 
           height: 350px; 
           align-items: center;
-        }*/
+        }
       }
     }
   }
-  .draw_panel{
-    position: absolute;
-    right: 6em;
-    top: 8rem;
-    border: 1px solid red; 
-    .line_svg{
-      margin: 0 10px; 
-      animation: 1.5s ease-out 0s infinite linesAnimatedHeader;   
-    }
-  }
-  @keyframes linesAnimatedHeader{
-    0%{
-      stroke: yellow;
-    }
-    50%{
-      stroke: blue; 
-    }
-    100%{
-      stroke: red;
-    }
-  }
+  
   .header_bottom{
     width: 100%;
     display: flex;
