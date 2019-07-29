@@ -5,7 +5,7 @@
   background-color: black;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   flex-flow: row wrap;
   .navbar{
     display: flex;
@@ -85,57 +85,85 @@
   .header_presentation{
     width: 100%;
     display: flex;
-    max-width: 75%;
-    margin: 100px auto;
+    margin: 6.250em 0;
     cursor: default;
-    h1{
-      font-weight: bolder;
-      &.title-vertically{
-        font-size: 5rem; 
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        margin: auto;
-        text-transform: uppercase;
-        color: $sand;
-        animation: 1.5s ease-out 1s 1 onLaodTextVertically;
+    .header__pagination{
+      display: flex;
+      justify-content: center;
+      width: calc((100% / 4) - 1em ); 
+      min-height: 70vh;
+      flex-direction: column;
+      top: 30%; 
+      .pagination_stripe{
+        position: absolute;
+        background-color: $sand;
+        display: inline-block;
+        width: 6.5rem;
+        height: 1px;
+        margin: 0 .4rem 0 0;
+        vertical-align: top;
+        transform: rotate(90deg); 
       }
-      &.title-horizontally{
-        font-size: 3em;
-        animation: 1.5s ease-out 1.2s 1 onLaodTextHorizontally;
+      .pagination{
+        color: transparent;
+        -webkit-text-stroke: 2px $sand;
+        opacity: 0.7;
+        color: transparent;
+        font-size: 15vw;
       }
-      @keyframes onLaodTextHorizontally {
-        0%{
-          transform: translateY(-100%);
+    }
+    .header__title{
+      width: calc((100% / 4) - 1.5em ); 
+      display: flex; 
+      h1{
+        font-weight: bolder;
+        &.title-vertically{
+          font-size: 5rem; 
+          writing-mode: vertical-lr;
+          transform: rotate(180deg);
+          margin: auto;
+          text-transform: uppercase;
+          color: $sand;
+          animation: 1.5s ease-out  1 onLaodTextVertically;
         }
-        100%{
-          transform: translateY(0%);
+        &.title-horizontally{
+          font-size: 3em;
+          animation: 1.5s ease-out  1 onLaodTextHorizontally;
         }
-      }
-      @keyframes onLaodTextVertically{
-        0%{
-          transform: translateY(-100%) rotate(180deg);
+        @keyframes onLaodTextHorizontally {
+          0%{
+            transform: translateY(-100%);
+          }
+          100%{
+            transform: translateY(0%);
+          }
         }
-        100%{
-          transform: translateY(0%) rotate(180deg);
+        @keyframes onLaodTextVertically{
+          0%{
+            transform: translateY(-100%) rotate(180deg);
+          }
+          100%{
+            transform: translateY(0%) rotate(180deg);
+          }
         }
       }
     }
+    
     .header__text{
+      width: calc((100% / 4) - 1.5em ); 
       display: flex;
       width: 100%; 
-      justify-content: space-between;
-      .pannel_left{
+      justify-content: space-between; 
+      p{
         display: flex;
         align-items: center;
         margin-left: -60px;
-        p{
-          color: $sand;
-          font-size: 1.5em; 
-          font-style: italic;
-        }
+        color: $sand;
+        font-size: 1.5em; 
+        font-style: italic;
       }
     }
-    .pannel_right{
+    /*.pannel_right{
       display: flex;
       justify-content: flex-end;
       .header__img_right{
@@ -153,7 +181,7 @@
           align-items: center;
         }
       }
-    }
+    }*/
   }
   
   .header_bottom{
