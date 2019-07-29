@@ -132,7 +132,7 @@
         }
         @keyframes onLaodTextHorizontally {
           0%{
-            transform: translateY(-100%);
+            transform: translateY(-150%);
           }
           100%{
             transform: translateY(0%);
@@ -152,7 +152,6 @@
     .header__text{
       width: calc((100% / 4) - 1.5em ); 
       display: flex;
-      width: 100%; 
       justify-content: space-between; 
       p{
         display: flex;
@@ -182,7 +181,36 @@
         }
       }
     }*/
+    .header__draw_panel{
+      width: calc((100% / 4) - 1.5em );
+      position: absolute;
+      right: 6em;
+      top: 8rem;
+      .line_svg{
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        &.line_one{
+          animation: 3s linear 0s forwards 1 dash; 
+        } 
+        &.line_two{
+          animation: 3s linear 1s forwards 1 dash; 
+        }
+        &.line_three{
+          animation: 3s linear 2s forwards 1 dash; 
+        }
+      }
+      
+      @keyframes dash{
+        from {
+          stroke-dashoffset: 1000;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    }
   }
+  
   
   .header_bottom{
     width: 100%;
