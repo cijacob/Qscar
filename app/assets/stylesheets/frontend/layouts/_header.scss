@@ -30,12 +30,7 @@
           letter-spacing: 0.1em;
           text-decoration: none;
           line-height: 2;
-          padding: 0 1.5em; 
-          //text-shadow: 0 8.36px 8.896px #c4b59d,0 -2px 1px #fff;
-          //transition: all 400ms ease-in-out;
-          &:hover{
-            //text-shadow: 0 8.36px 10.896px #c4b59d,0 -2px 1px #fff;
-          }
+          padding: 0 1.5em;
         }
       }
       .navbar__links{
@@ -158,8 +153,9 @@
         align-items: center;
         margin-left: -60px;
         color: $sand;
-        font-size: 1.5em; 
+        font-size: 2em; 
         font-style: italic;
+        letter-spacing: 0.1em;
       }
     }
     /*.pannel_right{
@@ -182,21 +178,20 @@
       }
     }*/
     .header__draw_panel{
-      width: calc((100% / 4) - 1.5em );
       position: absolute;
-      right: 6em;
-      top: 8rem;
+      right: 0;
+      top: 3rem;
       .line_svg{
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
         &.line_one{
-          animation: 3s linear 0s forwards 1 dash; 
+          animation: 2s linear 0s forwards 1 dash; 
         } 
         &.line_two{
-          animation: 3s linear 1s forwards 1 dash; 
+          animation: 2s linear 1s forwards 1 dash; 
         }
         &.line_three{
-          animation: 3s linear 2s forwards 1 dash; 
+          animation: 2s linear 2s forwards 1 dash; 
         }
       }
       
