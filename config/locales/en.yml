@@ -3,7 +3,10 @@ en:
     index:
       contact_us: "Get in touch"
       about_us: "About us"
-      what_we_do: "What we do?"
+      what_we_do: "What we do"
+      what_we: "What we"
+      do: "Do?"
+      price: "our price"
       text_presentation: "Let's work together!"
       NL: "nl"
       FR: "fr"
@@ -23,7 +26,7 @@ en:
 
     project:
       explain_icon: "Creation, development and gestion of your website."
-      explain_icon_two: "Design, ergonomy, content and SEO"
+      explain_icon_two:
       strategie: "Strategy"
       creativity: "Creativity"
       conception_realisation: "Conception & Realisation"
@@ -80,4 +83,12 @@ en:
     form:
       form_good: "We have received your message and will be in touch soon!"
       form_error: "There was an error sending your message. Please try again."
+
+    contact: 
+      get_in: "Get in"
+      touch: "Touch!"
+
+    price: 
+      our_different: "Our multiple"
+      offers: "Offres"
   

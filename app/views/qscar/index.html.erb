@@ -2,28 +2,14 @@
   <div class="section" id="our_project">
     <%= render template: 'qscar/project' %>
   </div>
+  <div class="section" id="our_price">
+    <%= render template: 'qscar/price' %>
+  </div>
   <div class="section" id="about_us">
     <%= render template: 'qscar/about' %>
   </div>
   <div class="section" id="contact_us">
-    <div class="title">
-      <span><%= t('qscar.index.contact_us') %></span>
-    </div>
-    <div class="content">
-      <div class="text_content para_3">
-        <div class="panel panel_left">
-        
-        </div>
-        <div class="panel panel_right">
-          <div class="form new_message">
-            <% flash.each do |key, value| %>
-              <div class="alert alert-<%= key %>"><%= value %></div>
-            <% end %>
-            <%= render :template => 'messages/new' %>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render template: 'qscar/contact' %>
   </div>
 </div>
 

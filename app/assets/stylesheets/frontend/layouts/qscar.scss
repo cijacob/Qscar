@@ -22,6 +22,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 li{
   list-style: none; 
 }
+
 .container{
   @media #{$small-only} {
   }
@@ -34,7 +35,32 @@ li{
   box-shadow: 0 15px 15px -3px #8E8D8A;
   border-radius: 10px; 
   .section{
-    height: 200px;
+    //height: 200px;
+    min-height: 100vh;
+    margin-top: 170px;
+    .content{
+      display:flex;
+      flex-wrap: wrap;
+    }
+    .header__title{
+      width: calc((100% / 4) - 1.5em ); 
+      display: flex; 
+      h1{
+        font-weight: bolder;
+        z-index: 10;
+        &.title-vertically{
+          font-size: 5rem; 
+          writing-mode: vertical-lr;
+          transform: rotate(180deg);
+          margin: auto;
+          text-transform: uppercase;
+          color: $sand;
+        }
+        &.title-horizontally{
+          font-size: 3em;
+        }
+      }
+    }
     .title{
       display: flex;
       color: $grey-dark;
@@ -56,9 +82,72 @@ li{
         margin: 0 20px; 
       }
     }
+    .header__pagination{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      width: calc((100% / 8) - 1em ); 
+      min-height: 70vh;
+      flex-direction: column;
+      .pagination_stripe_bottom, 
+      .pagination_stripe_top{
+        background-color: $sand;
+        display: inline-block;
+        height: 1px;
+        vertical-align: top;
+        transform: rotate(90deg);
+        position: relative;
+        background-color: #D8C3A5;
+        width: 10rem;
+      }
+      .pagination_stripe_top{
+        margin-bottom: 4em;
+      }
+      .pagination_stripe_bottom{
+        margin-top: 4em; 
+      }
+      .pagination{
+        color: transparent;
+        -webkit-text-stroke: 2px $sand;
+        opacity: 0.7;
+        color: transparent;
+        font-size: 8vw;
+      }
+    }
+    .icon{
+      display: flex;
+      justify-content: center; 
+      z-index: 2; 
+      margin: 1em;
+      background-color: white; 
+      @media #{$medium-up}{
+        flex-direction: row;
+        width: calc((100% / 4) - 1.5em );
+        align-items: center;
+      }
+      svg{
+        height: 200px;
+      }
+      .website{
+        fill: $grey-dark;
+        transition: 0.3s;
+      }
+      .inner_icon{
+        text-align: center;
+        box-shadow: 10px 5px 5px $grey-light;
+        &:hover .website{
+          fill: $pink-dark;
+        }
+      }
+      .explain_icon{
+        @media #{$medium-up}{
+          margin-top: -50px; 
+        }
+      }
+    }
   }
 
-  .section:nth-child(3){
+  .section:nth-child(4){
     height:100%;
     padding-bottom: 30px; 
     background: linear-gradient(270deg, $pink-light, $sand, $grey-light);
@@ -113,6 +202,7 @@ li{
   .section{
     margin-bottom: 2rem;
     height: 100%;
+    padding-top: 30px; 
     .content_about{
       display: flex;
       flex-direction: column-reverse;
@@ -233,34 +323,41 @@ li{
   }
 }
 .check-done{
+  width: 100vw;
   display:flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
+  justify-content: flex-end;
+  /*flex-flow: column wrap;
   align-content: center;
-  padding: 0 20px;
+  padding: 0 20px;*/
   text-align: center;
-  margin: 50px 0; 
   @media #{$medium-up}{
     height: 200px;
   }
   ul{
     @media #{$medium-up}{
-      flex-direction: row;
+      /*display: flex;
+      flex-direction: row;*/
+      border: 1px solid $grey-light;
+      display: grid; 
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 33% 33% 33%;
+      box-shadow: 10px 5px 5px $grey-light;
+      z-index: 0; 
+      width: calc((100% / 2) - 1.5em);
+      margin-top: -150px;
     } 
     li{
       margin: 0.5rem 0;
-      display: inline-flex;
-      //justify-content: space-between;
-      //justify-items: center;
       font-family: $font-roboto;
-      padding: 10px 25px;
+      padding: 10px;
       color: $grey-dark; 
       cursor: pointer;
       .tag > svg{
         display: flex;
         justify-content: center;
         margin: auto;
+        width: 60px;
       }
       .seo, 
       .advice, 
@@ -285,38 +382,13 @@ li{
   }
 }
 
-.icon{
-  display: flex;
-  justify-content: center; 
-  @media #{$medium-up}{
-    flex-direction: row;
-    justify-content: flex-start; 
-  }
-  svg{
-    height: 200px;
-  }
-  .website{
-    fill: $grey-dark;
-    transition: 0.3s;
-  }
-  .inner_icon{
-    text-align: center;
-    &:hover .website{
-      fill: $pink-dark;
-    }
-  }
-  .explain_icon{
-    @media #{$medium-up}{
-      margin-top: -50px; 
-    }
-  }
-}
 
 .category{
   display: flex; 
   justify-content: center;
-  margin: 30px auto;
-  width: calc(100% - 10rem);
+  width: calc(60% - 1.5em);
+  margin-top: 125px;
+  margin-left: -50px;
   .inner_category{
     width: 100%; 
   }

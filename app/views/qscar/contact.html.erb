@@ -1,0 +1,24 @@
+<div class="content">
+	<div class="header__pagination">
+		<span class="pagination_stripe_top"></span>
+		<span class="pagination">04</span>
+		<span class="pagination_stripe_bottom"></span>
+	</div>
+	<!--<div class="title">
+		<span><%= t('qscar.index.contact_us') %></span>
+	</div>-->
+	<div class="header__title">
+			<h1 class='title-vertically'><%= t('qscar.contact.get_in') %></h1>
+			<h1 class='title-horizontally'><%= t('qscar.contact.touch') %></h1>
+	</div>
+	<div class="content">
+		<div class="text_content para_3">
+			<div class="form new_message">
+				<% flash.each do |key, value| %>
+					<div class="alert alert-<%= key %>"><%= value %></div>
+				<% end %>
+				<%= render :template => 'messages/new' %>
+			</div>
+		</div>
+	</div>
+</div>

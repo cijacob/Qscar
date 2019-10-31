@@ -2,7 +2,10 @@ fr:
   qscar:
     index:
       about_us: "À propos de nous"
-      what_we_do: "Nos projets"
+      what_we_do: "Que faisons nous"
+      what_we: "Que fait"
+      do: "On?"
+      price: "Nos prix"
       contact_us: "Contactez-nous"
       text_presentation: "Let's work together!"
       NL: "nl"
@@ -24,7 +27,7 @@ fr:
 
     project:
       explain_icon: "Création, dévelopement et gestion de votre site internet."
-      explain_icon_two: "Design, ergonomie, contenu rédactionnel, référencement SEO"
+      explain_icon_two:
       strategie: "Stratégie"
       creativity: "Creativité"
       advice: "Conseils"
@@ -85,3 +88,11 @@ fr:
     form:
       form_good: "Votre message a bien été envoyé, nous revenons vers vous au plus vite"
       form_error: "Il y a quelques erreurs dans le formulaire"
+
+    contact: 
+      get_in: "Contactez-"
+      touch: "nous!"
+
+    price: 
+      our_different: "Nos différentes"
+      offers: "Formules"

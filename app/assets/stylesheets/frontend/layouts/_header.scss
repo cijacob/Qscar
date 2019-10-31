@@ -120,6 +120,7 @@
       display: flex; 
       h1{
         font-weight: bolder;
+        z-index: 10; 
         &.title-vertically{
           font-size: 5rem; 
           writing-mode: vertical-lr;
