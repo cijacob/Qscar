@@ -1,8 +1,44 @@
 .header{
+  .burger{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    .burger-pointer-area{
+      cursor:pointer; 
+      width:80px; 
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      span{
+        &.spline{
+          display: flex;
+          position: absolute;
+          flex-direction: row;
+          margin: 5px;
+          &:nth-child(1){
+            width:40px;
+            top: 0;
+            border-top: 5px solid $pink-light;
+          }
+          &:nth-child(2){
+            width:45px;
+            top: 15px;
+            border-top: 5px solid $pink-orange;
+          }
+          &:nth-child(3){
+            width:50px;
+            top: 30px;
+            border-top: 5px solid $pink-dark;
+          }
+        }
+      }
+    }
+  }
   display: flex;
   font-family: $font-raleway;
-  //background-image: url('qscar_header.jpg');
-  //background-color: black;
   background-image: radial-gradient(circle, rgb(41, 41, 41) 5%, rgb(27, 26, 26) 20%, rgb(0, 0, 0) 70%);
   background-size: cover;
   background-position: center;
@@ -12,25 +48,45 @@
     display: flex;
     width: 100%;
     height: 60px; 
-    //background-color: rgba(234, 232, 220, 0.1); 
     background-color: rgba(12, 7, 7, 0.8);
     position: fixed; 
     z-index: 9999;
     nav{
-      display: flex;
-      width: 100%;
+      position:fixed;
+      display:flex;
+      justify-content: center;
+      width:100%;
+      flex-direction: column;
+      right:-100%;
+      min-height:100vh;
+      top: auto;
+      &.visible{
+        z-index:9999;
+        background-color:rgba(0, 0, 0, 0.8);
+        animation: 1.5s slideRight ease-in 1 forwards;
+      }
+      @keyframes slideRight{
+        from{
+          right: -100%;
+          opacity: 0; 
+        }
+        to{
+          right: 0%; 
+          opacity: 1; 
+        }
+      }
       .navbar__logo{
         display: flex;
         width: 250px; 
         a{
           color: $pink-dark;
-          font-size: 2em;
+          font-size: 3em;
           font-weight: 900;
           font-family: $font-raleway;
           text-transform: uppercase;
           letter-spacing: 0.1em;
           text-decoration: none;
-          line-height: 2;
+          line-height: 3;
           padding: 0 1.5em;
         }
       }
@@ -41,10 +97,23 @@
         align-items:center; 
         margin: 0;
         @media #{$medium-up}{
-          flex-direction: row; 
-          justify-content: flex-end;
+          flex-direction: column; 
+          justify-content: center;
         } 
         li{
+          span{
+            justify-content: center; 
+            display: flex; 
+            font-size: 2.5em;
+            flex-direction: row;
+          }
+          span::before,
+          span::after{
+            content:"";
+            border-top: 1px solid $pink-dark;
+            flex: 1 1;
+            margin: auto;
+          }
           @media #{$medium-up}{
             padding: .5rem 1.5rem 1rem 1.5rem;
           }
@@ -170,25 +239,6 @@
         }
       }
     }
-    /*.pannel_right{
-      display: flex;
-      justify-content: flex-end;
-      .header__img_right{
-        display: flex; 
-        width: 300px; 
-        height: 400px;
-        background-image: url('qscar_header.jpg');
-        background-position: center;
-        background-size: cover;
-        .header__inner_img{
-          margin: auto; 
-          border: 2px solid $sand;
-          width: 250px; 
-          height: 350px; 
-          align-items: center;
-        }
-      }
-    }*/
     .header__draw_panel{
       position: absolute;
       right: 0;

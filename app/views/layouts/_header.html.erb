@@ -1,21 +1,28 @@
 <div class="header">
+  <div class="burger" id="burger">
+    <div class="burger-pointer-area">
+      <span class="spline spline_one"></span>
+      <span class="spline spline_two"></span>
+      <span class="spline spline_three"></span>
+    </div>
+  </div>
   <div class="navbar nav-menu">
-    <nav>
+    <nav class="menu visible">
       <div class="navbar__logo">
         <%= link_to "Qscar", root_path%>
       </div>
       <ul class='navbar__links'>
         <li class="section_link">
-          <%= link_to t('qscar.index.what_we_do'), qscar_index_path(anchor: 'our_project') %>
+          <span>01</span><%= link_to t('qscar.index.what_we_do'), qscar_index_path(anchor: 'our_project') %>
         </li>
         <li class="section_link">
-          <%= link_to t('qscar.index.price'), qscar_index_path(anchor: 'our_price') %>
+          <span>02</span><%= link_to t('qscar.index.price'), qscar_index_path(anchor: 'our_price') %>
         </li>
         <li class="section_link">
-          <%= link_to t('qscar.index.about_us'), qscar_index_path(anchor: 'about_us') %>
+          <span>03</span><%= link_to t('qscar.index.about_us'), qscar_index_path(anchor: 'about_us') %>
         </li>
         <li class="section_link">
-          <%= link_to t('qscar.index.contact_us'), qscar_index_path(anchor: 'contact_us') %>
+          <span>04</span><%= link_to t('qscar.index.contact_us'), qscar_index_path(anchor: 'contact_us') %>
         </li>
         <li>
           <div class="language">
