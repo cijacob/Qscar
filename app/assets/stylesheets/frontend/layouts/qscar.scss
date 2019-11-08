@@ -227,6 +227,13 @@ li{
       font-family: $font-raleway; 
       color: $grey-dark; 
     }
+    .text_content.para_3{
+      @media #{$medium-up}{
+        width: 500px;
+        margin-top: 85px;
+        margin-left: -240px;
+      }
+    }
     .text_content.para_1,
     .text_content.para_2{
       margin: auto; 
