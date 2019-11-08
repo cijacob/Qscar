@@ -35,9 +35,11 @@ li{
   box-shadow: 0 15px 15px -3px #8E8D8A;
   border-radius: 10px; 
   .section{
-    //height: 200px;
     min-height: 100vh;
-    margin-top: 170px;
+    margin-top: 30px;
+    @media #{$medium-up} {
+      margin-top: 170px; 
+    }
     .content{
       display:flex;
       flex-wrap: wrap;
@@ -49,7 +51,7 @@ li{
         font-weight: bolder;
         z-index: 10;
         &.title-vertically{
-          font-size: 5rem; 
+          font-size: 3rem; 
           writing-mode: vertical-lr;
           transform: rotate(180deg);
           margin: auto;
@@ -57,7 +59,17 @@ li{
           color: $sand;
         }
         &.title-horizontally{
-          font-size: 3em;
+          font-size: 2em;
+        }
+      }
+      @media #{$medium-up}{
+        h1{
+          &.title-vertically{
+          font-size: 5rem; 
+          }
+          &.title-horizontally{
+            font-size: 3em;
+          }
         }
       }
     }
@@ -70,14 +82,6 @@ li{
       font-size: 20px;
       letter-spacing: 0.1em;
       margin-bottom: 30px;
-      /*&:before, 
-      &:after{
-        display: block; 
-        content: "";
-        flex: 1; 
-        align-self: center;
-        border-bottom: 1px solid currentColor; 
-      }*/
       span{
         margin: 0 20px; 
       }
@@ -422,7 +426,6 @@ li{
       &:focus,
       &:hover{
         color: $pink-dark;
-        //border-bottom: 1px solid $pink-dark;
       }
     }
   }

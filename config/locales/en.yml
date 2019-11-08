@@ -13,16 +13,12 @@ en:
       EN: "en"
 
     about:
+      about: "About"
+      us: "Us"
       explain_about_us_html: |
-        Freelance front-end developer </br>
+        Web developer front-end</br>
         with a sharp eye for design and details.
         I love to give life to all projects on I'm working.
-      explain_about_us_d_html: |
-        "It's all about the people" </br>
-        Like to start from scratch - </br>
-        Customer Service / Journey - Intrapreneur - People Development / Coaching - </br>
-        Event managment/ Change managment / Business Development - </br>
-        Like to work with people, let them make the diffrence!
 
     project:
       explain_icon: "Creation, development and gestion of your website."
@@ -43,7 +39,7 @@ en:
       explication_dynamic: ""
       list_choice_landing: |
         Une page web de contenu en une langue répondant aux attentes des différents devices
-        Un template conçu pour vous selon l'image de votre marque
+        Un design conçu pour vous selon l'image de votre marque
         Un formulaire de contact
         Vos photos, textes et votre logo
         Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
@@ -51,7 +47,7 @@ en:
         Référencement naturel (SEO) sur Google
       list_choice_static: |
         Un site web de 3 pages de contenu dans plusieurs langues  répondant aux attentes des différents devices
-        Un template conçu pour vous selon l'image de votre marque
+        Un design conçu pour vous selon l'image de votre marque
         Un formulaire de contact
         Vos photos, textes et votre logo
         Ajout d'effet dynamique 
@@ -61,7 +57,7 @@ en:
         Référencement naturel (SEO) sur Google
       list_choice_dynamic: |
         Un site web d'un nombre illimité de pages de contenu dans plusieurs langues répondant aux attentes des différents devices
-        Un template conçu pour vous selon l'image de votre marque
+        Un design conçu pour vous selon l'image de votre marque
         Un formulaire de contact
         Banner dynamique
         Possibilité d'avoir des utilisateurs

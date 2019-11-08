@@ -13,15 +13,12 @@ nl:
       EN: "en"
 
     about:
+      about: "A propos de"
+      us: "Onze"
       explain_about_us_html: |
-        Freelance front-end developer </br>
+        Web developer front-end developer </br>
         avec un gout prononcé pour le design et les détails.
-      explain_about_us_d_html: |
-        "It's all about the people"
-        Retail & Hospitality - Wine & Food Lover - Like to start from scratch - 
-        Customer Service / Journey - Intrapreneur - People Development / Coaching - 
-        Event managment/ Change managment / Business Development - 
-        Like to work with people, let them make the diffrence!
+        I love to give life to all projects on I'm working.
 
     project: 
       explain_icon: "Création, dévelopement et gestion de votre site internet."
@@ -89,7 +86,7 @@ nl:
 
     price: 
       our_different: "Our differents"
-      offers: "Offres"
+      offers: "Offers"
   
 
   
