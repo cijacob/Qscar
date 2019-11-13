@@ -16,7 +16,7 @@
 //= require turbolinks
 //= require foundation
 //= require_tree .
-//= require test
+//= require header
 
 
 $(document).on('turbolinks:load', function() {

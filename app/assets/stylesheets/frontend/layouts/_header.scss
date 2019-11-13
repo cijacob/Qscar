@@ -4,6 +4,7 @@
     justify-content: flex-end;
     width: 100%;
     position: fixed;
+    z-index: 999999; 
     .burger-pointer-area{
       cursor:pointer; 
       width:80px; 
@@ -11,7 +12,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 999;
+      z-index: 9999;
       span{
         &.spline{
           display: flex;
@@ -44,13 +45,27 @@
   background-position: center;
   max-height: 100vh;
   flex-flow: row wrap;
+  .navbar__logo{
+    display: flex;
+    width: 250px; 
+    a{
+      color: $pink-dark;
+      font-size: 3em;
+      font-weight: 900;
+      font-family: $font-raleway;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      line-height: 3;
+      padding: 0 1.5em;
+    }
+  }
   .navbar{
     display: flex;
     width: 100%;
     height: 60px; 
     background-color: rgba(12, 7, 7, 0.8);
-    position: fixed; 
-    z-index: 9999;
+    position: fixed;
     nav{
       position:fixed;
       display:flex;
@@ -61,11 +76,15 @@
       min-height:100vh;
       top: auto;
       &.visible{
-        z-index:9999;
-        background-color:rgba(0, 0, 0, 0.8);
-        animation: 1.5s slideRight ease-in 1 forwards;
+        z-index:99;
+        background-color:rgba(0, 0, 0, 0.9);
+        animation: 1.5s slideLeft ease-in 1 forwards;
       }
-      @keyframes slideRight{
+      &.notVisible{
+        background-color:rgba(0, 0, 0, 0.9);
+        animation: 1s slideRight ease-out 1 forwards;
+      }
+      @keyframes slideLeft{
         from{
           right: -100%;
           opacity: 0; 
@@ -75,19 +94,14 @@
           opacity: 1; 
         }
       }
-      .navbar__logo{
-        display: flex;
-        width: 250px; 
-        a{
-          color: $pink-dark;
-          font-size: 3em;
-          font-weight: 900;
-          font-family: $font-raleway;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          text-decoration: none;
-          line-height: 3;
-          padding: 0 1.5em;
+      @keyframes slideRight{
+        from{
+          right: 0%; 
+          opacity:1;
+        }
+        to{
+          right: -100%;
+          opacity: 0;
         }
       }
       .navbar__links{
@@ -275,34 +289,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    top: -100px; 
-    .bullet__one,
-    .bullet__two,
-    .bullet__three{
-      display: block;
-      content: ""; 
-      background-color: $pink-light;
-      align-items: center;
-      margin: auto; 
-    }
-    .bullet__one{
-      margin-top: -70px;
-      height: 10px; 
-      width: 10px; 
-      border-radius: 10px; 
-    }
-    .bullet__two{
-      margin-top: -40px;
-      height: 12px; 
-      width: 12px; 
-      border-radius: 12px; 
-    }
-    .bullet__three{
-      margin-top: -40px;
-      height: 14px; 
-      width: 14px; 
-      border-radius: 14px; 
-    }
+    top: -100px;
     .social_media{
       display: flex; 
       flex-direction: row; 

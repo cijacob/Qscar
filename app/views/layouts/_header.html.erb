@@ -1,16 +1,16 @@
 <div class="header">
-  <div class="burger" id="burger">
-    <div class="burger-pointer-area">
+  <div class="navbar nav-menu">
+  <div class="navbar__logo">
+    <%= link_to "Qscar", root_path%>
+  </div>
+  <div class="burger">
+    <div id="burger" class="burger-pointer-area">
       <span class="spline spline_one"></span>
       <span class="spline spline_two"></span>
       <span class="spline spline_three"></span>
     </div>
   </div>
-  <div class="navbar nav-menu">
-    <nav class="menu visible">
-      <div class="navbar__logo">
-        <%= link_to "Qscar", root_path%>
-      </div>
+    <nav class="menu">
       <ul class='navbar__links'>
         <li class="section_link">
           <span>01</span><%= link_to t('qscar.index.what_we_do'), qscar_index_path(anchor: 'our_project') %>
@@ -28,7 +28,7 @@
           <div class="language">
             <%= link_to t('qscar.index.EN'), locale: "en" %>
             <%= link_to t('qscar.index.FR'), locale: "fr" %>
-            <%= link_to t('qscar.index.NL'), locale: "nl"%>
+            <%= link_to t('qscar.index.NL'), locale: "nl" %>
           </div>
         </li>
       </ul>
@@ -66,9 +66,6 @@
     </div>-->
   </div>
   <div class="header_bottom">
-  <!--<div class="bullet__one"></div>
-    <div class="bullet__two"></div>
-    <div class="bullet__three">-->
     <ul class="social_media">
       <li class="social_media_link"><a href=""><i class="fab fa-linkedin"></i></a></li>
       <li class="social_media_link"><a href="https://twitter.com/QscarDigital"><i class="fab fa-twitter-square"></i></a></li>
