@@ -1,11 +1,33 @@
 .header{
-  .burger{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  display: flex;
+  font-family: $font-raleway;
+  background-image: radial-gradient(circle, rgb(41, 41, 41) 5%, rgb(27, 26, 26) 20%, rgb(0, 0, 0) 70%);
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+  flex-flow: row wrap;
+  .nav__line{
+    width:100%;
+    display:flex;
+    height: 60px; 
+    justify-content: space-between;
     position: fixed;
-    z-index: 999999; 
-    .burger-pointer-area{
+    background-color: rgb(12, 7, 7);
+    z-index:9999;
+    .navbar__logo{
+      width: 250px;
+      a{
+        color: $pink-dark;
+        font-size: 3em;
+        font-weight: 900;
+        font-family: $font-raleway;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        padding: 0 1.5em;
+      }
+    }
+    .burger{
       cursor:pointer; 
       width:80px; 
       height: 80px;
@@ -20,52 +42,27 @@
           flex-direction: row;
           margin: 5px;
           &:nth-child(1){
-            width:40px;
-            top: 0;
-            border-top: 5px solid $pink-light;
+            width:30px;
+            top: 10px;
+            border-top: 2px solid $pink-light;
           }
           &:nth-child(2){
-            width:45px;
-            top: 15px;
-            border-top: 5px solid $pink-orange;
+            width:30px;
+            top: 20px;
+            border-top: 2px solid $pink-orange;
           }
           &:nth-child(3){
-            width:50px;
+            width:30px;
             top: 30px;
-            border-top: 5px solid $pink-dark;
+            border-top: 2px solid $pink-dark;
           }
         }
       }
     }
   }
-  display: flex;
-  font-family: $font-raleway;
-  background-image: radial-gradient(circle, rgb(41, 41, 41) 5%, rgb(27, 26, 26) 20%, rgb(0, 0, 0) 70%);
-  background-size: cover;
-  background-position: center;
-  max-height: 100vh;
-  flex-flow: row wrap;
-  .navbar__logo{
-    display: flex;
-    width: 250px; 
-    a{
-      color: $pink-dark;
-      font-size: 3em;
-      font-weight: 900;
-      font-family: $font-raleway;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      line-height: 3;
-      padding: 0 1.5em;
-    }
-  }
   .navbar{
-    display: flex;
-    width: 100%;
-    height: 60px; 
-    background-color: rgba(12, 7, 7, 0.8);
-    position: fixed;
+    //display: flex;
+    //width: 100%;
     nav{
       position:fixed;
       display:flex;
@@ -76,8 +73,8 @@
       min-height:100vh;
       top: auto;
       &.visible{
-        z-index:99;
-        background-color:rgba(0, 0, 0, 0.9);
+        z-index:9999;
+        background-color:rgba(0, 0, 0, 1);
         animation: 1.5s slideLeft ease-in 1 forwards;
       }
       &.notVisible{

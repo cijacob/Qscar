@@ -13,13 +13,11 @@
 //= require jquery3
 //= require jquery_ujs
 //= require activestorage
-//= require turbolinks
 //= require foundation
 //= require_tree .
 //= require header
 
-
-$(document).on('turbolinks:load', function() {
+document.addEventListener('DOMContentLoaded', (event) => {
   $('.section_link a').on("click",function (e) {
    
     e.preventDefault();
@@ -86,8 +84,7 @@ $(document).on('turbolinks:load', function() {
   }); 
 });
 
-
-$(document).on('turbolinks:load', function(){
+document.addEventListener('DOMContentLoaded', (event) => {
   $('.title_head span').on('click', function(e){
     e.preventDefault();
     var content = $(this).data('content'); 

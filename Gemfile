@@ -14,7 +14,7 @@ gem 'foundation-rails', '~> 6.5', '>= 6.5.3.0'
 gem 'autoprefixer-rails'
 gem "font-awesome-rails"
 gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'exception_handler', '~> 0.8.0.0'
