@@ -125,6 +125,7 @@ li{
       margin: 1em;
       background-color: white; 
       @media #{$medium-up}{
+        margin-left: -58px;
         flex-direction: row;
         width: calc((100% / 4) - 1.5em );
         align-items: center;

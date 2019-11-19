@@ -248,6 +248,10 @@
         @media #{$medium-up}{
           margin-left: -60px;
         }
+        span{
+          color: $pink-dark;
+          
+        }
       }
     }
     .header__draw_panel{

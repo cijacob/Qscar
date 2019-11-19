@@ -5,9 +5,11 @@ nl:
       what_we_do: "Wat we doen?"
       what_we: "Wat we"
       do: "Doen?"
-      contact_us: "Contact ons"
+      contact_us: "Contacteer ons"
       price: "Onze offers"
-      text_presentation: "Let's work together!"
+      text_presentation_first: "Let's create something"
+      awesome: "Awesome"
+      text_presentation_last: "together!"
       NL: "nl"
       FR: "fr"
       EN: "en"
@@ -21,12 +23,12 @@ nl:
         I love to give life to all projects on I'm working.
 
     project: 
-      explain_icon: "Création, dévelopement et gestion de votre site internet."
+      explain_icon: "Creëren, ontwikkelen en onderhouden van uw website"
       explain_icon_two:
       strategie: "Strategie"
       creativity: "Creativity"
       advice: "advies"
-      conception_realisation: "Conception & Réalisatie"
+      conception_realisation: "Conceptie & Realisatie"
       site_vitrine: "Static website"
       landing-page: "Landing page"
       hebergement: "Production, mise en ligne & hébergement"
