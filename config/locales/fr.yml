@@ -3,8 +3,8 @@ fr:
     index:
       about_us: "À propos de nous"
       what_we_do: "Que faisons nous"
-      what_we: "Que fait"
-      do: "On?"
+      what_we: "Notre"
+      do: "Expertise"
       price: "Nos offres"
       contact_us: "Contactez-nous"
       text_presentation_first: "Let's create something"
@@ -15,8 +15,8 @@ fr:
       EN: "en"
 
     about:
-      about: "A propos de"
-      us: "Nous"
+      about: "A propos"
+      us: "De nous"
       explain_about_us_html:  |
         Freelance </br>
         front-end developer
@@ -92,5 +92,5 @@ fr:
       touch: "nous!"
 
     price: 
-      our_different: "Nos différentes"
+      our_different: "Nos diverses"
       offers: "Formules"

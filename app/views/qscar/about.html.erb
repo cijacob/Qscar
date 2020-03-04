@@ -1,21 +1,17 @@
-<div class="content">
-  <div class="header__pagination">
-    <span class="pagination_stripe_top"></span>
-    <span class="pagination">03</span>
-    <span class="pagination_stripe_bottom"></span>
+<div class="header__pagination">
+  <span class="pagination_stripe_top"></span>
+  <span class="pagination">03</span>
+  <span class="pagination_stripe_bottom"></span>
+</div>
+<div class='title-vertically'><h1 class='title__vrctl'><%= t('qscar.about.about') %></h1></div>
+<div class='title-horizontally'><h1 class='title__hrtl'><%= t('qscar.about.us') %></h1></div>
+<div class="content__text">
+  <div class="text_content para_1">
+    <%= t('qscar.about.explain_about_us_html') %>
   </div>
-  <div class="header__title">
-      <h1 class='title-vertically'><%= t('qscar.about.about') %></h1>
-      <h1 class='title-horizontally'><%= t('qscar.about.us') %></h1>
-  </div>
-  <div class="content content_about first">
-    <div class="text_content para_1">
-      <%= t('qscar.about.explain_about_us_html') %>
-    </div>
-    <div class="content_img img_profile">
-      <div class="cadre prfl_c">
-        <%= image_tag "profil_picture.jpg", class: "picture_face" %>
-      </div>
+  <div class="content_img img_profile">
+    <div class="cadre prfl_c">
+      <%= image_tag "profil_picture.jpg", class: "picture_face" %>
     </div>
   </div>
 </div>

@@ -1,52 +1,55 @@
 <div class="header">
-  <div class="nav__line">
-    <div class="navbar__logo">
-      <%= link_to "Qscar", root_path%>
-    </div>
-    <div id="burger" class="burger">
+  <div class="nav">
+    <div class="nav__line">
+      <div class="navbar__logo">
+        <%= link_to image_tag('LOGOQscar.png', alt:'Logo Qscar'), root_path %>
+      </div>
+      <div id="burger" class="burger">
         <span class="spline spline_one"></span>
         <span class="spline spline_two"></span>
         <span class="spline spline_three"></span>
+      </div>
+    </div>
+    <div class="navbar nav-menu">
+      <nav class="menu">
+        <ul class='navbar__links'>
+          <li class="section_link">
+            <span>01</span><%= link_to t('qscar.index.what_we_do'), qscar_index_path(anchor: 'our_project') %>
+          </li>
+          <li class="section_link">
+            <span>02</span><%= link_to t('qscar.index.price'), qscar_index_path(anchor: 'our_price') %>
+          </li>
+          <li class="section_link">
+            <span>03</span><%= link_to t('qscar.index.about_us'), qscar_index_path(anchor: 'about_us') %>
+          </li>
+          <li class="section_link">
+            <span>04</span><%= link_to t('qscar.index.contact_us'), qscar_index_path(anchor: 'contact_us') %>
+          </li>
+          <li>
+            <div class="language">
+              <%= link_to t('qscar.index.EN'), locale: "en" %>
+              <%= link_to t('qscar.index.FR'), locale: "fr" %>
+              <%= link_to t('qscar.index.NL'), locale: "nl" %>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <div class="navbar nav-menu">
-    <nav class="menu">
-      <ul class='navbar__links'>
-        <li class="section_link">
-          <span>01</span><%= link_to t('qscar.index.what_we_do'), qscar_index_path(anchor: 'our_project') %>
-        </li>
-        <li class="section_link">
-          <span>02</span><%= link_to t('qscar.index.price'), qscar_index_path(anchor: 'our_price') %>
-        </li>
-        <li class="section_link">
-          <span>03</span><%= link_to t('qscar.index.about_us'), qscar_index_path(anchor: 'about_us') %>
-        </li>
-        <li class="section_link">
-          <span>04</span><%= link_to t('qscar.index.contact_us'), qscar_index_path(anchor: 'contact_us') %>
-        </li>
-        <li>
-          <div class="language">
-            <%= link_to t('qscar.index.EN'), locale: "en" %>
-            <%= link_to t('qscar.index.FR'), locale: "fr" %>
-            <%= link_to t('qscar.index.NL'), locale: "nl" %>
-          </div>
-        </li>
-      </ul>
-    </nav>
+  <div class="header__pagination">
+    <span class="pagination_stripe_top"></span>
+    <span class="pagination">00</span>
+    <span class="pagination_stripe_bottom"></span>
+  </div>
+  <div class='title-vertically'><h1 class='title__vrctl'>Qscar</h1></div>
+  <div class='title-horizontally'><h1 class='title__hrtl'>Digital</h1></div>
+  <div class='header__text'>
+      <span>"<%= t('qscar.index.text_presentation_first') %> </span>
+      <span> <%= t('qscar.index.awesome') %></span> 
+      <span><%= t('qscar.index.text_presentation_last') %>"</span>
   </div>
   <div class="header_presentation">
-    <div class="header__pagination">
-      <span class="pagination_stripe_top"></span>
-      <span class="pagination">00</span>
-      <span class="pagination_stripe_bottom"></span>
-    </div>
-    <div class="header__title">
-      <h1 class='title-vertically'>Qscar</h1>
-      <h1 class='title-horizontally'>Digital</h1>
-    </div>
-    <div class='header__text'>
-        <p>"<%= t('qscar.index.text_presentation_first') %>"<span><%= t('qscar.index.awesome') %></span>"<%= t('qscar.index.text_presentation_last')" %><p>
-    </div>
+    
     <div class='header__animation'>
       <div class='header__img_right'>
         <div class="header__inner_img"></div>      
