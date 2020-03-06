@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav__line">
       <div class="navbar__logo">
-        <%= link_to image_tag('LOGOQscar.png', alt:'Logo Qscar'), root_path %>
+        <%= link_to image_tag('LogoQscarWhite.png', alt:'Logo Qscar'), root_path %>
       </div>
       <div id="burger" class="burger">
         <span class="spline spline_one"></span>
@@ -13,17 +13,77 @@
     <div class="navbar nav-menu">
       <nav class="menu">
         <ul class='navbar__links'>
-          <li class="section_link">
-            <span>01</span><%= link_to t('qscar.index.what_we_do'), qscar_index_path(anchor: 'our_project') %>
+          <li class="section_link" data-hover="scale">
+            <span>01</span>
+            <div class="section_grp">
+              <%= link_to qscar_index_path(anchor: 'our_project') do %>
+                <%= t('qscar.index.what_we_do') %>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 85 30.5" style="enable-background:new 0 0 85 30.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#E85A4F;}
+                </style>
+                <path class="st0" d="M1.5,16.8h78.1L68.5,27.9c-0.6,0.6-0.6,1.5,0,2.1c0.6,0.6,1.5,0.6,2.1,0l13.5-13.5c0.4-0.3,0.6-0.7,0.6-1.2
+                  c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0-0.3-0.1-0.4c0-0.1-0.1-0.2-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2L70.5,0.4
+                  C70.2,0.1,69.9,0,69.5,0s-0.8,0.1-1.1,0.4c-0.6,0.6-0.6,1.5,0,2.1l11.3,11.3H1.5c-0.8,0-1.5,0.7-1.5,1.5S0.7,16.8,1.5,16.8z"/>
+                </svg>
+              <% end %>
+            </div>
           </li>
           <li class="section_link">
-            <span>02</span><%= link_to t('qscar.index.price'), qscar_index_path(anchor: 'our_price') %>
+            <span>02</span>
+            <div class="section_grp">
+              <%= link_to qscar_index_path(anchor: 'our_price') do %>
+                <%= t('qscar.index.price') %>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 85 30.5" style="enable-background:new 0 0 85 30.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#E85A4F;}
+                </style>
+                <path class="st0" d="M1.5,16.8h78.1L68.5,27.9c-0.6,0.6-0.6,1.5,0,2.1c0.6,0.6,1.5,0.6,2.1,0l13.5-13.5c0.4-0.3,0.6-0.7,0.6-1.2
+                  c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0-0.3-0.1-0.4c0-0.1-0.1-0.2-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2L70.5,0.4
+                  C70.2,0.1,69.9,0,69.5,0s-0.8,0.1-1.1,0.4c-0.6,0.6-0.6,1.5,0,2.1l11.3,11.3H1.5c-0.8,0-1.5,0.7-1.5,1.5S0.7,16.8,1.5,16.8z"/>
+                </svg>
+              <% end %>
+            </div>
           </li>
           <li class="section_link">
-            <span>03</span><%= link_to t('qscar.index.about_us'), qscar_index_path(anchor: 'about_us') %>
+            <span>03</span>
+            <div class="section_grp">
+              <%= link_to qscar_index_path(anchor: 'about_us') do %>
+                <%= t('qscar.index.about_us') %>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 85 30.5" style="enable-background:new 0 0 85 30.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#E85A4F;}
+                </style>
+                <path class="st0" d="M1.5,16.8h78.1L68.5,27.9c-0.6,0.6-0.6,1.5,0,2.1c0.6,0.6,1.5,0.6,2.1,0l13.5-13.5c0.4-0.3,0.6-0.7,0.6-1.2
+                  c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0-0.3-0.1-0.4c0-0.1-0.1-0.2-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2L70.5,0.4
+                  C70.2,0.1,69.9,0,69.5,0s-0.8,0.1-1.1,0.4c-0.6,0.6-0.6,1.5,0,2.1l11.3,11.3H1.5c-0.8,0-1.5,0.7-1.5,1.5S0.7,16.8,1.5,16.8z"/>
+                </svg>
+              <% end %>
+            </div>
           </li>
           <li class="section_link">
-            <span>04</span><%= link_to t('qscar.index.contact_us'), qscar_index_path(anchor: 'contact_us') %>
+            <span>04</span>
+            <div class="section_grp">
+              <%= link_to qscar_index_path(anchor: 'contact_us') do %>
+                <%= t('qscar.index.contact_us') %>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 85 30.5" style="enable-background:new 0 0 85 30.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#E85A4F;}
+                </style>
+                <path class="st0" d="M1.5,16.8h78.1L68.5,27.9c-0.6,0.6-0.6,1.5,0,2.1c0.6,0.6,1.5,0.6,2.1,0l13.5-13.5c0.4-0.3,0.6-0.7,0.6-1.2
+                  c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0-0.3-0.1-0.4c0-0.1-0.1-0.2-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2L70.5,0.4
+                  C70.2,0.1,69.9,0,69.5,0s-0.8,0.1-1.1,0.4c-0.6,0.6-0.6,1.5,0,2.1l11.3,11.3H1.5c-0.8,0-1.5,0.7-1.5,1.5S0.7,16.8,1.5,16.8z"/>
+                </svg>
+              <% end %>
+            </div>
           </li>
           <li>
             <div class="language">
