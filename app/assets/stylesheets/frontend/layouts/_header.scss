@@ -8,6 +8,32 @@
   grid-template-columns: 100px 200px 1fr 50px;
   grid-template-rows: 100px 100px 1fr 50px;
   min-height: 100vh;
+  .smoke {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    transform: translate3d(0, 0, 0) rotate(0.01deg);
+    width: 100%;
+    height: 100%;
+    background: url('') center center no-repeat;
+    background-size: cover;
+    opacity: .3;
+    animation: smokebg 60s infinite alternate;
+    @keyframes smokebg {
+      25% {
+        transform: translate3d(100px, 0, 0) rotate(0.01deg)
+      }
+      50% {
+        transform: translate3d(75px, -25px, 0) rotate(0.01deg)
+      }
+      75% {
+        transform: translate3d(45px, 30px, 0) rotate(0.01deg)
+      }
+      100% {
+        transform: translate3d(25px, -15px, 0) rotate(0.01deg)
+      }
+    }
+  }
   .nav{
     grid-column: 1 / 5;
     grid-row: 1 / 2;
@@ -86,7 +112,7 @@
       min-height:100vh;
       top: auto;
       &.visible{
-        z-index:9999;
+        z-index:99;
         background-color:rgba(0, 0, 0, 1);
         animation: 1.5s slideLeft ease-in 1 forwards;
       }
@@ -123,8 +149,12 @@
         @media #{$medium-up}{
           flex-direction: column; 
           justify-content: center;
-        } 
+        }
+        ul{
+          padding-top: 4em;
+        }
         li{
+          width: 300px;
           span{
             justify-content: center; 
             display: flex; 
@@ -146,13 +176,13 @@
               margin-left:10px ;
               width: 25px;
               height: 20px;
-              transition-duration: 0.5s;
+              transition-duration: 0.3s;
               transform: rotate(-45deg);
-              transition-timing-function: ease-in;
+              transition-timing-function: ease-out;
             }
-            svg:hover{
-              transform: rotate(0deg);
-            }
+          }
+          .section_grp:hover svg{
+            transform: rotate(0deg);
           }
           @media #{$medium-up}{
             padding: .5rem 1.5rem 1rem 1.5rem;
@@ -161,17 +191,6 @@
           a{
             color: $pink-dark;
             text-decoration: none;
-          }
-          a::after{
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: $pink-dark;
-            transition: width .3s;
-          }
-          a:hover::after{
-            width: 100%;
           }
           .language{
             display: flex;
@@ -272,7 +291,7 @@
     display: flex;
     align-items: flex-start;
     span:nth-child(2){
-      color: $pink-dark;
+      color: $pink-orange;
       font-weight: bold; 
       letter-spacing: 0.3em;
       font-size: 3.5em;
@@ -290,6 +309,9 @@
       0%{
         transform: scale(0.1);
         opacity: 0;
+      }
+      70%{
+        transform: scale(1.2);
       }
       100%{
         transform: scale(1);
