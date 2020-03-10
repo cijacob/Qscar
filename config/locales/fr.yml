@@ -18,9 +18,10 @@ fr:
       about: "A propos"
       us: "De nous"
       explain_about_us_html:  |
-        Freelance </br>
-        front-end developer
-        avec un gout prononcé pour le design et les détails.
+        Web developer front-end</br>
+        
+        Mon background en tant que designer m'ont aidé à me faire un oeil pointu 
+        J'ai un gout prononcé pour le design et les détails.
         J'aime donner vie à tous les projets sur lesquels je travaille.
         J'ai décidé de créer mon agence de developement digital dans le but de vous accompagner
         en traduisant vos idées en un site web qui veprésente votre business. 
@@ -30,7 +31,6 @@ fr:
 
     project:
       explain_icon: "Création, dévelopement et gestion de votre site internet."
-      explain_icon_two:
       strategie: "Stratégie"
       creativity: "Creativité"
       advice: "Conseils"
@@ -97,5 +97,5 @@ fr:
       touch: "nous!"
 
     price: 
-      our_different: "Nos diverses"
+      our_different: "Nos "
       offers: "Formules"
