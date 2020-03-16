@@ -5,10 +5,11 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  grid-template-columns: 100px 200px 1fr 50px;
+  grid-template-columns: 100px 100px 1fr 50px;
   grid-template-rows: 100px 100px 1fr 50px;
   min-height: 100vh;
-  .smoke {
+  width: 100vw;
+  /*.smoke {
     position: absolute;
     top: -10%;
     left: -10%;
@@ -33,12 +34,12 @@
         transform: translate3d(25px, -15px, 0) rotate(0.01deg)
       }
     }
-  }
+  }*/
   .nav{
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     .nav__line{
-      width:100%;
+      width:100vw;
       display:flex;
       height: 80px; 
       justify-content: space-between;
@@ -245,15 +246,22 @@
     z-index: 10; 
     margin: 0; 
     line-height: 1.2;
-    padding-bottom: 50px;
     &.title__vrctl{
-      font-size: 5rem; 
+      font-size: 5em; 
       writing-mode: vertical-lr;
       transform: rotate(180deg);
-      margin: auto;
+      align-self: baseline;
       text-transform: uppercase;
       color: $sand;
-      animation: 1.5s ease-out  1 onLaodTextVertically;
+      animation: 1.5s ease-out 1 onLaodTextVertically;
+    }
+    @media #{$medium-up}{
+      h1{
+        padding-bottom: 50px;
+        &.title__vrctl{
+          margin: auto;
+        }
+      }
     }
     @keyframes onLaodTextVertically{
       0%{
@@ -290,11 +298,12 @@
     grid-row-start: 3 / 4;
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     span:nth-child(2){
       color: $pink-orange;
       font-weight: bold; 
       letter-spacing: 0.3em;
-      font-size: 3.5em;
+      font-size: 2em;
       animation-name: textOpacity;
       animation-duration: 3s;
     }
@@ -302,8 +311,17 @@
       display: flex;
       align-items: center;
       color: $sand;
-      font-size: 2em; 
+      font-size: 1.2em; 
       font-style: italic;
+    }
+    @media #{$medium-up}{
+      flex-direction: row;
+      span:nth-child(2){
+        font-size: 3.5em;
+      }
+      span{
+        font-size: 2em;
+      }
     }
     @keyframes textOpacity{
       0%{
@@ -311,7 +329,7 @@
         opacity: 0;
       }
       70%{
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
       100%{
         transform: scale(1);
@@ -322,6 +340,7 @@
   .header_bottom{
     grid-column: 1 / 5;
     grid-row: 4 / 5;
+    width: 100vw;
     .social_media{
       display: flex; 
       flex-direction: row; 
