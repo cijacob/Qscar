@@ -234,7 +234,6 @@
     }
   }
   .title-vertically{
-    //background-color: springgreen;
     @media #{$medium-up}{
       grid-column: 2 / 3;
       grid-row: 2 / 4;
@@ -247,19 +246,22 @@
     margin: 0; 
     line-height: 1.2;
     &.title__vrctl{
-      font-size: 5em; 
+      font-size: 3em; 
       writing-mode: vertical-lr;
       transform: rotate(180deg);
       align-self: baseline;
       text-transform: uppercase;
       color: $sand;
       animation: 1.5s ease-out 1 onLaodTextVertically;
+      letter-spacing: 1.1em;
     }
     @media #{$medium-up}{
       h1{
         padding-bottom: 50px;
         &.title__vrctl{
+          font-size: 5em; 
           margin: auto;
+          letter-spacing: 1.1em;
         }
       }
     }
@@ -279,8 +281,17 @@
     grid-row: 2 / 3;
     h1{
       &.title__hrtl{
-        font-size: 3em;
+        font-size: 2em;
         animation: 1.5s ease-out  1 onLaodTextHorizontally;
+      }
+      @media #{$medium-up}{
+        h1{
+          padding-bottom: 50px;
+          &.title__hrtl{
+            font-size: 3em; 
+            margin: auto;
+          }
+        }
       }
       @keyframes onLaodTextHorizontally {
         0%{
@@ -293,9 +304,8 @@
     }
   }
   .header__text{
-    //background-color: steelblue;
-    grid-column-start: 3 / 5;
-    grid-row-start: 3 / 4;
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -303,7 +313,7 @@
       color: $pink-orange;
       font-weight: bold; 
       letter-spacing: 0.3em;
-      font-size: 2em;
+      font-size: 1.2em;
       animation-name: textOpacity;
       animation-duration: 3s;
     }
@@ -311,7 +321,7 @@
       display: flex;
       align-items: center;
       color: $sand;
-      font-size: 1.2em; 
+      font-size: 1em; 
       font-style: italic;
     }
     @media #{$medium-up}{

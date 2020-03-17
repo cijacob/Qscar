@@ -82,12 +82,22 @@ li{
       line-height: 1.2;
       padding-bottom: 50px;
       &.title__vrctl{
-        font-size: 4em; 
+        font-size: 3em; 
         writing-mode: vertical-lr;
         transform: rotate(180deg);
-        margin: auto;
+        align-self: baseline;
         text-transform: uppercase;
         color: $sand;
+        letter-spacing: 1.1em;
+      }
+    }
+    @media #{$medium-up}{
+      h1{
+        &.title__vrctl{
+          font-size: 5em; 
+          margin: auto;
+          letter-spacing: 1.1em;
+        }
       }
     }
     .content__text{
@@ -492,7 +502,7 @@ li{
   .content_presentation{
     display: flex;
     width: 100%;
-    flex-direction: row; 
+    flex-direction: column-reverse; 
     @media #{$medium-up}{
       flex-direction: row;
       justify-content: space-evenly;
@@ -505,6 +515,7 @@ li{
         display: flex;
         justify-content: center;
         align-items: center;
+        
       }
       animation: 3s linear 1s 1 profileImg;
         @keyframes profileImg{
