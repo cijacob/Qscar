@@ -1,11 +1,9 @@
 @import "font-awesome";
-
-body{
+*{
   margin: 0;
   padding: 0;
-  width: 100%;
+  box-sizing: border-box;
 }
-
 body:before {
   background: url();
   content: "";
@@ -22,24 +20,30 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 li{
   list-style: none; 
 }
-
+a{
+  text-decoration: none;
+}
 .container{
-  @media #{$small-only} {
+  width:100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle, rgb(41, 41, 41) 5%, rgb(27, 26, 26) 20%, rgb(23, 22, 22) 70%);
+  background-size: cover;
+  background-position: center;
+  .wrapper{
+    display: grid; 
   }
-  width:100%;
-  margin: auto; 
-  margin-bottom: 2rem;
-  height: 100%;
-  background-color: white;
-  opacity: 0.9;
-  box-shadow: 0 15px 15px -3px #8E8D8A;
-  border-radius: 10px; 
-  .section{
+  section{
     display: grid;
-    grid-template-columns: 100px 100px 1fr;
-    grid-template-rows:100px 1fr 50px;
+    grid-template-columns: 50px 70px 1fr;
+    grid-template-rows:50px 1fr 50px;
     min-height: 100vh;
     padding-top: 1.5em;
+    &.our_project,
+    &.our_price,
+    &.about_us,
+    &.contact_us{
+      opacity: 0;
+    }
     .header__pagination{
       grid-column: 1 / 2;
       grid-row: 1 / 3;
@@ -74,13 +78,14 @@ li{
     .title-horizontally{
       grid-column: 3 / -1;
       grid-row: 1 / 2;
+      display: flex;
+      align-items: center; 
     }
     h1{
       font-weight: bolder;
       z-index: 10; 
       margin: 0; 
       line-height: 1.2;
-      padding-bottom: 50px;
       &.title__vrctl{
         font-size: 3em; 
         writing-mode: vertical-lr;
@@ -89,6 +94,8 @@ li{
         text-transform: uppercase;
         color: $sand;
         letter-spacing: 1.1em;
+        line-height: 1.7; 
+        padding-bottom: 50px;
       }
     }
     @media #{$medium-up}{
@@ -110,7 +117,6 @@ li{
         }
         .open-qscar-services{
           border: 0;
-          background: #5da3f2;
           font-weight: bold;
           text-transform: uppercase;
           letter-spacing: 0.15em;
@@ -416,6 +422,57 @@ li{
             }
           }
         } 
+      }
+      &.content__home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        @media #{$medium-up}{
+          flex-direction: row;
+          justify-content: center;
+        }
+        span{
+          display: flex;
+          color: $sand;
+          font-size: 1em; 
+          font-style: italic;
+          width: 100%; 
+          &:nth-child(2){
+            color: $pink-orange;
+            font-weight: bold; 
+            letter-spacing: 0.3em;
+            font-size: 1.2em;
+            animation-name: textOpacity;
+            animation-duration: 3s;
+            justify-content: center;
+          }
+          &:nth-child(3){
+            justify-content: end;
+            padding-right: 20px;
+          }
+        }
+        @media #{$medium-up}{
+          flex-direction: row;
+          span:nth-child(2){
+            font-size: 3.5em;
+          }
+          span{
+            font-size: 2em;
+          }
+        }
+        @keyframes textOpacity{
+          0%{
+            transform: scale(0.1);
+            opacity: 0;
+          }
+          70%{
+            transform: scale(1.1);
+          }
+          100%{
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
       }
     }
     .header_bottom{
@@ -771,16 +828,6 @@ li{
   }
 }
 // Animation on svg
-.seo{
-  &.s_20,
-  &.s_22,
-  &.s_23{
-    stroke-dasharray: 1060;
-    animation-name: infiniteRotate;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-  }
-}
 .advice{
   &.adv_3{
     animation: infiniteMoove 3s 2s ease infinite;

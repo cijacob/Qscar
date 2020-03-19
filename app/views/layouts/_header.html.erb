@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav__line">
       <div class="navbar__logo">
-        <%= link_to image_tag('LogoQscarWhite.png', alt:'Logo Qscar'), root_path %>
+        <%= link_to image_tag('LogoQscarWhite.png', alt:'Logo Qscar',  class: "logo_link"), root_path %>
       </div>
       <div id="burger" class="burger">
         <span class="spline spline_one"></span>
@@ -16,7 +16,7 @@
           <li class="section_link" data-hover="scale">
             <span>01</span>
             <div class="section_grp">
-              <%= link_to qscar_index_path(anchor: 'our_project') do %>
+              <%= link_to qscar_index_path(anchor: 'our_project'), class: "our_project_link" do %>
                 <%= t('qscar.index.what_we_do') %>
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -34,7 +34,7 @@
           <li class="section_link">
             <span>02</span>
             <div class="section_grp">
-              <%= link_to qscar_index_path(anchor: 'our_price') do %>
+              <%= link_to qscar_index_path(anchor: 'our_price'), class: "our_price_link" do %>
                 <%= t('qscar.index.price') %>
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -52,7 +52,7 @@
           <li class="section_link">
             <span>03</span>
             <div class="section_grp">
-              <%= link_to qscar_index_path(anchor: 'about_us') do %>
+              <%= link_to qscar_index_path(anchor: 'about_us'), class: "about_us_link" do %>
                 <%= t('qscar.index.about_us') %>
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -70,7 +70,7 @@
           <li class="section_link">
             <span>04</span>
             <div class="section_grp">
-              <%= link_to qscar_index_path(anchor: 'contact_us') do %>
+              <%= link_to qscar_index_path(anchor: 'contact_us'), class: "contact_us_link" do %>
                 <%= t('qscar.index.contact_us') %>
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -95,44 +95,6 @@
         </ul>
       </nav>
     </div>
-  </div>
-  <div class="header__pagination">
-    <span class="pagination_stripe_top"></span>
-    <span class="pagination">00</span>
-    <span class="pagination_stripe_bottom"></span>
-  </div>
-  <div class='title-vertically'><h1 class='title__vrctl'>Qscar</h1></div>
-  <div class='title-horizontally'><h1 class='title__hrtl'>Digital</h1></div>
-  <div class='header__text'>
-      <span>"<%= t('qscar.index.text_presentation_first') %> </span>
-      <span> <%= t('qscar.index.awesome') %></span> 
-      <span><%= t('qscar.index.text_presentation_last') %>"</span>
-  </div>
-  <!--<div class="header_presentation">
-    <div class='header__animation'>
-      <div class='header__img_right'>
-        <div class="header__inner_img"></div>      
-      </div>
-    </div>
-    <div class="header__draw_panel">
-      <svg width="100%" height="100%" xml:lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://wwww.w3.org/1999/xlink">
-        <title>line header qscar</title>
-        <desc>animate lines header Qscar digital header</desc>
-        <polyline class="line_svg line_one" points="280,10 100,610 80,450 "
-          style="fill:none; stroke:#f3784c; stroke-width:4px; " />
-        <line class="line_svg line_two" x1="300" x2="30" y1="10" y2="610"
-          style="fill:none; stroke:#D8C3A5; stroke-width:4px; " />
-        <line class="line_svg line_three" x1="320" x2="50" y1="10" y2="610"
-          style="fill:none; stroke:#8E8D8A; stroke-width:4px; " />
-      </svg>
-    </div>
-  </div>-->
-  <div class="header_bottom">
-    <ul class="social_media">
-      <li class="social_media_link"><a href=""><i class="fab fa-linkedin"></i></a></li>
-      <li class="social_media_link"><a href="https://twitter.com/QscarDigital"><i class="fab fa-twitter-square"></i></a></li>
-      <li class="social_media_link"><a href="https://www.instagram.com/qscar_digital/"><i class="fab fa-instagram"></i></a></li>
-    </ul>
   </div>
 </div>
 
