@@ -35,17 +35,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 // links 
-let logo_link = document.querySelector('.navbar__logo')
-let our_project_link = document.querySelector(".our_project_link")
-let our_price_link = document.querySelector(".our_price_link")
-let about_us_link = document.querySelector(".about_us_link")
-let contact_us_link = document.querySelector(".contact_us_link")
+let logo_link = document.querySelector('.navbar__logo');
+let our_project_link = document.querySelector(".our_project_link");
+let our_price_link = document.querySelector(".our_price_link");
+let about_us_link = document.querySelector(".about_us_link");
+let contact_us_link = document.querySelector(".contact_us_link");
 //section 
-let home = document.querySelector("#home")
-let our_project = document.querySelector("#our_project")
-let our_price = document.querySelector("#our_price")
-let about_us = document.querySelector("#about_us")
-let contact_us = document.querySelector("#contact_us")
+let home = document.querySelector("#home");
+let our_project = document.querySelector("#our_project");
+let our_price = document.querySelector("#our_price");
+let about_us = document.querySelector("#about_us");
+let contact_us = document.querySelector("#contact_us");
 
 function handleOpacity(opacityZero, opacityOne, opacityTwo, opacityThree, opacityFour){
   opacityZero.style.opacity= 1,

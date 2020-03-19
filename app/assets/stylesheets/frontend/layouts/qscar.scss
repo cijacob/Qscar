@@ -36,13 +36,46 @@ a{
     display: grid;
     grid-template-columns: 50px 70px 1fr;
     grid-template-rows:50px 1fr 50px;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 1.5em;
     &.our_project,
     &.our_price,
     &.about_us,
     &.contact_us{
       opacity: 0;
+    }
+    &.home{
+      h1{
+        &.title__vrctl{
+          animation: 1.5s ease-out 1 onLaodTextVertically;
+        }
+        &.title__hrtl{
+          animation: 1.7s ease-out  1 onLaodTextHorizontally;
+        }
+      }
+      @keyframes onLaodTextVertically{
+        0%{
+          transform: translateY(-100%) rotate(180deg);
+        }
+        100%{
+          transform: translateY(0%) rotate(180deg);
+        }
+      }
+      @keyframes onLaodTextHorizontally {
+        0%{
+          transform: translateY(-150%);
+        }
+        100%{
+          transform: translateY(0%);
+        }
+      }
+    }
+    &.home,
+    &.our_project, 
+    &.our_price,
+    &.about_us,
+    &.contact_us{
+      position: absolute;
     }
     .header__pagination{
       grid-column: 1 / 2;
@@ -504,7 +537,7 @@ a{
   
   }
 
-  .section:nth-child(4){
+  section:nth-child(5){
     height:100%;
     padding-bottom: 30px; 
     background: linear-gradient(270deg, $pink-light, $sand, $grey-light);
@@ -643,50 +676,6 @@ a{
       }
     }
   }
-
-/*ul{
-  @media #{$medium-up}{
-    border: 1px solid $grey-light;
-    display: grid; 
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 33% 33% 33%;
-    box-shadow: 10px 5px 5px $grey-light;
-    z-index: 0;
-  } 
-  li{
-    margin: 0.5rem 0;
-    font-family: $font-roboto;
-    padding: 10px;
-    color: $grey-dark; 
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    .tag > svg{
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      width: 60px;
-    }
-    .seo, 
-    .advice, 
-    .hosting, 
-    .creativity, 
-    .conception{
-      fill: $pink-dark;
-      opacity: 1;
-      transition: 0.5s ease-in-out;
-    }
-    &:hover .seo, 
-    &:hover .advice, 
-    &:hover .hosting, 
-    &:hover .creativity, 
-    &:hover .conception{
-      opacity: 1;
-    }
-  }
-}*/
-
-
 .category{
   .inner_category{
     width: 100%; 
