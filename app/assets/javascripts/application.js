@@ -54,6 +54,14 @@ function handleOpacity(opacityZero, opacityOne, opacityTwo, opacityThree, opacit
   opacityThree.style.opacity = 0,
   opacityFour.style.opacity = 0 
 }
+function handleDisplay(displayZero, displayOne, displayTwo, displayThree, displayFour){
+  displayZero.style.display = "grid", 
+  displayOne.style.display = "none", 
+  displayTwo.style.display = "none", 
+  displayThree.style.display = "none", 
+  displayThree.style.display = "none", 
+  displayFour.style.display = "none" 
+}
 
 function handleAnimation(){
   for(let i=0; i<arguments.length; i++ ){
@@ -65,18 +73,23 @@ function handleAnimation(){
 
 logo_link.addEventListener('click', function(){
   handleOpacity(home, our_project, our_price, about_us, contact_us)
+  handleDisplay(home, our_project, our_price, about_us, contact_us)
 })
 our_project_link.addEventListener('click', function(){
   handleOpacity(our_project, home, our_price, about_us, contact_us)
+  handleDisplay(our_project, home, our_price, about_us, contact_us)
 })
 our_price_link.addEventListener('click', function(){
   handleOpacity(our_price, home, our_project, about_us, contact_us)
+  handleDisplay(our_price, home, our_project, about_us, contact_us)
 })
 about_us_link.addEventListener('click', function(){
-  handleOpacity( about_us, home, our_project, our_price, contact_us)
+  handleOpacity(about_us, home, our_project, our_price, contact_us)
+  handleDisplay(about_us, home, our_project, our_price, contact_us)
 })
 contact_us_link .addEventListener('click', function(){
-  handleOpacity( contact_us, home, our_project, our_price, about_us, contact_us)
+  handleOpacity(contact_us, home, our_project, our_price, about_us)
+  handleDisplay(contact_us, home, our_project, our_price, about_us)
 })
 
 
