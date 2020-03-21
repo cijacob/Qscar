@@ -6,11 +6,6 @@
 <div class='title-vertically'><h1 class='title__vrctl'><%= t('qscar.index.what_we') %></h1></div>
 <div class='title-horizontally'><h1 class='title__hrtl'><%= t('qscar.index.do') %></h1></div>
 <div class="content__text content__project">
-  <div class="icon">
-    <!--<div class="explain_icon">
-      <p><%= t('qscar.project.explain_icon') %></p>
-    </div>-->
-  </div>
   <div class='qscar-services show reveal'>
     <div class='qscar-services-pagination'>
       <a class='dot active'></a>
@@ -18,69 +13,58 @@
       <a class='dot'></a>
       <a class='dot'></a>
       <a class='dot'></a>
-      <a class='dot'></a>
     </div>
     <div class='qscar-services-body'>
       <ul class='screens animate'>
-        <li class='screen active'>
-          <div class='media logo'> 
-            <%= render 'qscar/svg/webDev' %>
-          </div>
-          <h3>
-            <%= t('qscar.project.web_design') %>
-            <br><%= t('qscar.project.identite_visuelle') %></br>
-          </h3>
-          <p><%= t('qscar.project.strategie') %></p>
-        </li>
         <li class='screen'>
-          <div class='media books'> 
-            <%= render 'qscar/svg/webDev' %>
-          </div>
-          <h3>
-            <%= t('qscar.project.web_dev') %>
-            <br><%= t('qscar.project.web_mobile') %></br>
-          </h3>
-          <p><%= t('qscar.project.creativity') %></p>
-        </li>
-        <li class='screen'>
-          <div class='media bars'>
-            <%= render 'qscar/svg/creativity' %> 
-          </div>
-          <h3>
-            <%= t('qscar.project.web_dev') %>
-            <br><%= t('qscar.project.web_dev') %></br>
-          </h3>
-          <p><%= t('qscar.project.creativity') %></p>
-        </li>
-        <li class='screen'>
-          <div class='media files'>
+          <div class='media media_advice'>
             <%= render 'qscar/svg/advice' %> 
           </div>
           <h3>
-          <%= t('qscar.project.web_dev') %>
-            <br><%= t('qscar.project.web_dev') %></br>
+          <%= t('qscar.project.title_advice') %>
+            <br><%= t('qscar.project.subtitle_advice') %></br>
           </h3>
-          <p><%= t('qscar.project.advice') %></p>
+          <p><%= t('qscar.project.txt_advice') %></p>
         </li>
-        <li class='screen'>
-          <div class='media comm'>
-            <%= render 'qscar/svg/conception' %> 
+        <li class='screen active'>
+          <div class='media media_creativity'> 
+            <%= render 'qscar/svg/creativity' %>
           </div>
           <h3>
-            <%= t('qscar.project.web_dev') %>
-            <br><%= t('qscar.project.web_dev') %></br>
+            <%= t('qscar.project.title_web_design') %>
+            <br><%= t('qscar.project.subtitle_web_design') %></br>
           </h3>
-          <p><%= t('qscar.project.conception_realisation') %></p>
+          <p><%= t('qscar.project.txt_web_design') %></p>
         </li>
         <li class='screen'>
-          <div class='media comm'>
-            <%= render 'qscar/svg/conception' %> 
+          <div class='media media_webdev'> 
+            <%= render 'qscar/svg/webDev' %>
           </div>
           <h3>
-            <%= t('qscar.project.web_dev') %>
-            <br><%= t('qscar.project.web_dev') %></br>
+            <%= t('qscar.project.title_web_dev') %>
+            <br><%= t('qscar.project.subtitle_web_dev') %></br>
           </h3>
-          <p><%= t('qscar.project.hebergement') %></p>
+          <p><%= t('qscar.project.txt_web_dev') %></p>
+        </li>
+        <li class='screen'>
+          <div class='media media_seo'>
+            <%= render 'qscar/svg/seo' %> 
+          </div>
+          <h3>
+            <%= t('qscar.project.title_referencement') %>
+            <br><%= t('qscar.project.subtitle_referencement') %></br>
+          </h3>
+          <p><%= t('qscar.project.txt_referencement') %></p>
+        </li>
+        <li class='screen'>
+          <div class='media comm media_hebergement'>
+            <%= render 'qscar/svg/hebergement' %> 
+          </div>
+          <h3>
+            <%= t('qscar.project.title_hosting') %>
+            <br><%= t('qscar.project.subtitle_hosting') %></br>
+          </h3>
+          <p><%= t('qscar.project.txt_hosting') %></p>
         </li>
       </ul>
       <button class='prev-screen'>
