@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6{
         z-index: 10; 
         margin: 0; 
         &.title__vrctl{
-          font-size: 3em; 
+          font-size: 2.5em; 
           writing-mode: vertical-lr;
           transform: rotate(180deg);
           text-transform: uppercase;
@@ -129,18 +129,11 @@ h1, h2, h3, h4, h5, h6{
         }
       }
       @media #{$medium-up}{
-        section:nth-child(5){
-          h1{
-            &.title__vrctl{
-              letter-spacing: 0;
-              font-size: 2em;
-              letter-spacing: 1.2em;
-            }
-          }
-        }
         h1{
           &.title__vrctl{
-            font-size: 4em; 
+            letter-spacing: 0;
+            font-size: 3em;
+            letter-spacing: 1.2em;
             margin: auto;
           }
         }

@@ -1,5 +1,5 @@
 .new_message{
-  width: 300px; 
+  width: 230px; 
   margin: auto; 
   ::-webkit-input-placeholder {
     text-align: right;
@@ -24,6 +24,7 @@
     font-family: $font-roboto;
     font-size: 14px;
     background-color: transparent;
+    color: $grey-light;
   }
   .input-wrap {
     position: relative;
@@ -173,8 +174,12 @@
       opacity: 1;
     }
   }
+  @media #{$medium-up}{
+    width: 300Px; 
+  }
 }
-.btn{
+.btn_form{
+  background-color: transparent;
   padding: 10px 30px; 
   border-radius: 2px; 
   border: 2px solid $sand;
@@ -183,7 +188,7 @@
   outline:none;
   line-height: 20px;
   width: 130px;
-  border-radius:40px;
+  border-radius:5px;
   font-family: $font-raleway;
   color: $sand;
   font-weight: bold;
@@ -191,8 +196,4 @@
   text-shadow:0;
   cursor: pointer;
   transition: all 0.25s ease;
-  &:hover {
-    //color:white;
-    //background: $pink-light;
-  }
 }
