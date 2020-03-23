@@ -8,9 +8,9 @@
 <div class="content__text content__category">
   <div class="inner_category">
     <div class="header_category">
-      <div class="title_head landing"><span data-content="landing"><%= t('qscar.project.landing_option') %></span></div>
-      <div class="title_head static_web"><span data-content="static_web"><%= t('qscar.project.static_option') %></span></div>
-      <div class="title_head dynamic_web"><span data-content="dynamic_web"><%= t('qscar.project.dynamic_option') %></span></div>
+      <div class="title_head landing"><span class="active" data-content="landing"><%= t('qscar.project.landing_option') %></span></div>
+      <div class="title_head static_web"><span class="inactive" data-content="static_web"><%= t('qscar.project.static_option') %></span></div>
+      <div class="title_head dynamic_web"><span class="inactive" data-content="dynamic_web"><%= t('qscar.project.dynamic_option') %></span></div>
     </div>
     <div class="content_category">
       <div class="innner_content_category">
@@ -28,12 +28,11 @@
               <% end %>
             </ul>
           </div>
-          <div class="content_img"></div>
-            <div class="content_from">
+            <!--<div class="content_from">
               <div class="price btn-price">
                 <span><%= t('qscar.project.price_from') %> € 900 </span>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="innner_content_category hide" data-content="static_web">
@@ -47,12 +46,11 @@
                 <% end %> 
               </ul>
             </div>
-            <div class="content_img"></div>
-            <div class="content_from">
+            <!--<div class="content_from">
               <div class="price btn-price">
                 <span><%= t('qscar.project.price_from') %> € 1800 </span>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="innner_content_category hide" id="dynamic_web" data-content="dynamic_web">
@@ -66,22 +64,21 @@
                 <% end %>
               </ul>
             </div>
-            <div class="content_img"></div>
-            <div class="content_from">
+            <!--<div class="content_from">
               <div class="price btn-price">
                 <span><%= t('qscar.project.price_from') %> € 3000 </span>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
     </div>
-    <div class="discover_more">
+    <!--<div class="discover_more">
       <p><%= t('qscar.project.custom_made') %></p>
       <span class="btn">
         <%= link_to t('qscar.project.discover_more'), projects_index_path %>
       </span>
-    </div>
+    </div>-->
 </div>
 
 <div class="header_bottom">

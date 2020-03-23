@@ -24,16 +24,13 @@ en:
 
     project:
       title_web_design: "Web Design"
-      subtitle_web_design: "Visual Identity"
       txt_web_design: "Votre identité visuelle est importante! C'est pourquoi nous prendrons le temps de travailler ensemble dessus afin que votre site corresponde parfaitement à l'image de votre entreprise."
       title_web_dev: "Web development"
-      subtitle_web_dev: "mobile development"
       txt_web_dev: "Design & architecture du site validés?! Okay, nous passons à la phase conception de votre site,toujours en restant attentifs aux normes en vigueur, mais aussi à l'experience utilisateurs ainsi qu'aux performances."
       title_advice: "Advices"
       subtitle_advice: "Support"
       txt_advice: "Vous voulez un site? Mais vous ne savez pas vraiment par où commencer? C'est normal! Pas d'inquiétude"
-      title_referencement: "Natural referencing"
-      subtitle_referencement: "SEO"
+      title_referencement: "Natural referencing - SEO"
       txt_referencement: "Il est important d'être visible et d'être bien référencé par rapport à Google. Pas de problème nous sommes là aussi afin de vous accompagner dans la rédaction de vos contenus "
       title_hosting: "Web Hosting"
       subtitle_hosting: "Follow-up"
