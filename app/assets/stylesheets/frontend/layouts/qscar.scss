@@ -544,29 +544,7 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-  section:nth-child(5){
-    height:100%;
-    padding-bottom: 30px; 
-    background: linear-gradient(270deg, $pink-light, $sand, $grey-light);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
-    @keyframes AnimationName { 
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
-    @-webkit-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
-    @-moz-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
+  section:nth-child(6){
     .panel{
       &.panel_right{
         .form{
@@ -623,14 +601,9 @@ h1, h2, h3, h4, h5, h6{
             opacity: 1;
           }
         }
-      border: 2px solid $sand;
-      height: 10rem;
-      width: 10rem;
       overflow: hidden;
       transform-origin: 50% 50%;
       .cadre{
-        width: 14.375rem;
-        height: 12.5rem; 
       }
       .picture_face{
         width: 100%;
@@ -638,16 +611,9 @@ h1, h2, h3, h4, h5, h6{
       }
       @media #{$medium-up} {
         overflow: hidden;
-        -webkit-box-shadow: 0 10px 10px -3px $grey-dark;
-        -moz-box-shadow: 0 10px 10px -3px $grey-dark;
-        box-shadow: 0 10px 10px -3px $grey-dark;
-        transform: rotate(45deg);
+       
         .cadre{
-          width: 14.375rem;
-          height: 12.5rem;
-          transform: rotate(-45deg) translateY(-60px) translate(-20px);
           &.prfl_d{
-            transform: rotate(-45deg) translateY(-50px) translate(0px);
           }
         }
         .picture_face{
