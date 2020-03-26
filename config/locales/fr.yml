@@ -20,11 +20,13 @@ fr:
       explain_about_us_html:  |
         Web developer front-end</br>
         
-        Mon background en tant que designer m'ont aidé à me faire un oeil pointu 
-        J'ai un gout prononcé pour le design et les détails.
+        Mon background en tant que designer m'a donnée le gout pour le design et les détails. 
+
         J'aime donner vie à tous les projets sur lesquels je travaille.
-        J'ai décidé de créer mon agence de developement digital dans le but de vous accompagner
-        en traduisant vos idées en un site web qui veprésente votre business. 
+
+        J'ai décidé de créer mon agence de developement web dans le but de vous accompagner
+        du dévelopement. 
+        C'est ainsi que je vous accompagne en traduisant vos idées en un site qui représente votre société, entreprise, projet professionel. 
 
         Par la suite, je continue de vous suivre pour mettre à jour vos contenus, afin de vous aider 
         à être référencé au mieux. 
@@ -55,17 +57,16 @@ fr:
       custom_made: "Il est bien évident que nos services sont modulables, conscients que chaque projet est unique, n'hésitez donc pas à nous contcater si vous désirez plus d'infomations"
 
       list_choice_landing: |
-        Une page web de contenu en une langue
-        Responsive
+        Une page web responsive de contenu en une langue
         Un template conçu pour vous selon l'image de votre marque
         Un formulaire de contat
         Vos photos, textes et votre logo
+        Liens vers vos réseaux sociaux
         Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
         Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
         Référencement naturel (SEO) sur Google
       list_choice_static: |
-        Un site web de 3 pages de contenu dans plusieurs langues
-        Responsive
+        Un site web responsive de 3 pages de contenu dans plusieurs langues
         Un template conçu pour vous selon l'image de votre marque
         Un formulaire de contact
         Vos photos, textes et votre logo
@@ -75,15 +76,13 @@ fr:
         Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
         Référencement naturel (SEO) sur Google
       list_choice_dynamic: |
-        Un site web d'un nombre illimité de pages de contenu dans plusieurs langues
-        Responsive
+        Un site web responsive d'un nombre illimité de pages de contenu dans plusieurs langues
         Un template conçu pour vous selon l'image de votre marque
         Un formulaire de contact
         Vos photos, textes et votre logo
         Banner dynamique
-        Session administrateur
-        Utilisateurs
         Liens vers vos réseaux sociaux
+        Session administrateur / utilisateurs
         Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
         Un suivi et mise à jour de votre contenu selon la période préalablement décidée ensemble
         Référencement naturel (SEO) sur Google
