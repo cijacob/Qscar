@@ -3,10 +3,17 @@
     <div class="navbar__logo">
       <%= link_to image_tag('LogoQscarWhite.png', alt:'Logo Qscar',  class: "logo_link"), root_path %>
     </div>
-    <div id="burger" class="burger">
-      <span class="spline spline_one"></span>
-      <span class="spline spline_two"></span>
-      <span class="spline spline_three"></span>
+    <div class="navbar__l_b">
+      <div class="language">
+        <%= link_to t('qscar.index.EN'), locale: "en" %>
+        <%= link_to t('qscar.index.FR'), locale: "fr" %>
+        <%= link_to t('qscar.index.NL'), locale: "nl" %>
+      </div>
+      <div id="burger" class="burger">
+        <span class="spline spline_one"></span>
+        <span class="spline spline_two"></span>
+        <span class="spline spline_three"></span>
+      </div>
     </div>
   </div>
   <div class="navbar nav-menu">
@@ -85,11 +92,7 @@
           </div>
         </li>
         <li>
-          <div class="language">
-            <%= link_to t('qscar.index.EN'), locale: "en" %>
-            <%= link_to t('qscar.index.FR'), locale: "fr" %>
-            <%= link_to t('qscar.index.NL'), locale: "nl" %>
-          </div>
+          
         </li>
       </ul>
     </nav>
