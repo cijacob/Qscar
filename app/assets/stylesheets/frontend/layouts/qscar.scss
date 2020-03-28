@@ -693,7 +693,9 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     .innner_content_category{
       display: flex;
-      min-height: 450px;
+      max-height: 50vh;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
       h5{
         margin-bottom: 0; 
         color: $pink-dark;
@@ -701,6 +703,8 @@ h1, h2, h3, h4, h5, h6{
       .inner_content{
         p{
           width: 100%; 
+          color: white;
+          font-size: 14px;  
         }
         display:flex;
         flex-direction: column;
@@ -709,16 +713,16 @@ h1, h2, h3, h4, h5, h6{
         flex: 1 100%;
         }
       }
-      li span{
-        width: 20px; 
-        height: 20px; 
-        background-image: url('qscar_Check.svg');
-        display: inline-flex;
-        padding: 5px;
-        margin: 0 0.4rem; 
-      }
-      p{
-        font-size: 14px; 
+      li{
+        color: white; 
+        span{
+          width: 20px; 
+          height: 20px; 
+          background-image: url('qscar_Check.svg');
+          display: inline-flex;
+          padding: 5px;
+          margin: 0 0.4rem; 
+        }
       }
       h5{
         text-align: center; 
@@ -773,15 +777,18 @@ h1, h2, h3, h4, h5, h6{
       }
     }
     @media #{$medium-up}{
-      .inner_content{
-        flex-direction: row;
-        flex-flow: row wrap;
-        & >*{
-          padding: 0; 
+      .innner_content_category{
+        min-height: 500px;
+        overflow-y: hidden;
+        .inner_content{
+          flex-flow: row wrap;
+          & >*{
+            padding: 0; 
+          }
         }
-      }
-      h5{
-        padding: 0; 
+        h5{
+          padding: 20px; 
+        }
       }
     }
   }
