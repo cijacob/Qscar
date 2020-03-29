@@ -578,50 +578,66 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     width: 100%;
     flex-direction: column-reverse; 
-    @media #{$medium-up}{
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-    }
     .text_content{
-      width: 50%;
+      height: 280px;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      margin: 10px 0 5px;
+      padding-right: 14px;
+      text-align: justify;
+      text-justify: distribute;
+      h3{
+        color: $pink-orange;
+
+      }
+      p{
+        color: white;
+      }
     }
     .content_img.img_profile{
-      @media #{$small-only}{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
       animation: 3s linear 1s 1 profileImg;
-        @keyframes profileImg{
-          0%{
-            opacity: 0;
-          }
-          100%{
-            opacity: 1;
-          }
+      @keyframes profileImg{
+        0%{
+          opacity: 0;
         }
-      overflow: hidden;
-      transform-origin: 50% 50%;
+        100%{
+          opacity: 1;
+        }
+      }
       .cadre{
-      }
-      .picture_face{
-        width: 100%;
-        height: auto;
-      }
-      @media #{$medium-up} {
-        overflow: hidden;
-       
-        .cadre{
-          &.prfl_d{
-          }
-        }
+        width: 200px;
         .picture_face{
           width: 100%;
           height: auto;
         }
-      } 
+      }
     }
+    @media #{$medium-up} {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      .text_content{
+        height: 100% ;
+        width: 50%;
+        overflow-y: hidden;
+        p{
+          line-height: 2;
+        }
+      }
+      .content_img.img_profile{
+        .cadre{
+          width: 300px; 
+         .picture_face{
+            width: 100%;
+            height: auto;
+          } 
+        }
+      }
+    } 
+    
     .content_img.grid_img{
       width: 80%;
       display: flex; 
@@ -650,6 +666,8 @@ h1, h2, h3, h4, h5, h6{
       }
     }
   }
+
+
 .content__category{
   .inner_category{
     width: 100%; 
@@ -787,7 +805,7 @@ h1, h2, h3, h4, h5, h6{
           }
         }
         h5{
-          padding: 20px; 
+          margin: 15px 0 20px 0; 
         }
       }
     }

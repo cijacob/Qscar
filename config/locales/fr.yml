@@ -1,12 +1,12 @@
 fr: 
   qscar:
     index:
-      about_us: "À propos de nous"
-      what_we_do: "Que faisons nous"
+      about_us: "Qui suis-je?"
+      what_we_do: "Que faisons nous?"
       what_we: "Notre"
       do: "Expertise"
       price: "Nos offres"
-      contact_us: "Contactez-nous"
+      contact_us: "Contactez-nous!"
       text_presentation_first: "Créons quelque chose"
       awesome: "d'incroyable"
       text_presentation_last: "ensemble!"
@@ -15,19 +15,15 @@ fr:
       EN: "en"
 
     about:
-      about: "A propos"
-      us: "De nous"
+      about: "Qui"
+      us: "Suis-je"
+      explain_about_us_title_html: "Hello! Je m'appelle Cindy"
       explain_about_us_html:  |
-        Web developer front-end</br>
-        
-        Mon background en tant que designer m'a donnée le gout pour le design et les détails. 
-
-        J'aime donner vie à tous les projets sur lesquels je travaille.
-
-        J'ai décidé de créer mon agence de developement web dans le but de vous accompagner
-        du dévelopement. 
-        C'est ainsi que je vous accompagne en traduisant vos idées en un site qui représente votre société, entreprise, projet professionel. 
-
+        Web developer front-end, j'aime donner vie aux différents projets pour lesquels je travaille</br>
+        Mes quelques années passées dans la mode en tant que styliste m'ont donné le gout pour le design et le sens du détail. 
+        Après une reconversion comme web-developer, j'ai eu l'opportunité de travailler tant en agence web que pour des e-commerces.</br>
+        Aujourd'hui, j'ai décidé de créer mon agence de developement web dans le but de vous accompagner, 
+        en traduisant vos idées en un site qui représente votre société, entreprise, projet professionel.</br>
         Par la suite, je continue de vous suivre pour mettre à jour vos contenus, afin de vous aider 
         à être référencé au mieux. 
 
