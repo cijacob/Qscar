@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6{
           vertical-align: top;
           transform: rotate(90deg);
           position: relative;
-          background-color: #D8C3A5;
+          background-color: $sand;
           width: 8rem;
         }
         .pagination{
@@ -117,6 +117,7 @@ h1, h2, h3, h4, h5, h6{
         font-weight: bolder;
         z-index: 10; 
         margin: 0; 
+        color: $sand;
         &.title__vrctl{
           font-size: 2.5em; 
           writing-mode: vertical-lr;
@@ -252,12 +253,13 @@ h1, h2, h3, h4, h5, h6{
                 line-height: 1.4em;
                 text-transform: uppercase;
                 letter-spacing: 0.15em;
+                color: $pink-orange;
               }
               p{
                 line-height: 1.6em;
                 font-size: 14px;
                 margin-top: 16px;
-                padding-top: 0;
+                padding: 0;
                 color: rgba(white, 0.9);
               }
             }
@@ -487,6 +489,12 @@ h1, h2, h3, h4, h5, h6{
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            .qscar-services-body{
+              p{
+                padding: 0 30px; 
+                letter-spacing: 1px;
+              }
+            }
             span{
               font-size: 1.8em;
               &:nth-child(1){
@@ -676,7 +684,7 @@ h1, h2, h3, h4, h5, h6{
     display: inline-flex;
     flex-direction: column; 
     width: 100%;
-    margin-bottom: 15px; 
+    margin: 25px 0 15px; 
     @media #{$medium-up}{
       flex-direction: row; 
       margin-bottom: 0;
@@ -796,7 +804,7 @@ h1, h2, h3, h4, h5, h6{
     }
     @media #{$medium-up}{
       .innner_content_category{
-        min-height: 500px;
+        min-height: 460px;
         overflow-y: hidden;
         .inner_content{
           flex-flow: row wrap;

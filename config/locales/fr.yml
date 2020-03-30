@@ -96,8 +96,8 @@ fr:
       form_error: "Il y a quelques erreurs dans le formulaire"
 
     contact: 
-      get_in: "Contactez-"
-      touch: "nous!"
+      get_in: "Fixer"
+      touch: "un rendez-vous!"
 
     price: 
       our_different: "Nos "

@@ -10,7 +10,7 @@
   }
   .column{
     @media #{$medium-up}{
-      padding: 5rem;
+      padding: 3rem;
     }
     &span{
       padding: 5px 0; 
@@ -40,7 +40,7 @@
           color: $grey-dark;
         }
         i:hover{
-          color: $sand;
+          color: $pink-orange;
         }
       }
     }
@@ -58,7 +58,7 @@
           font-size: 1.5em;
           color: $grey-dark;
           &:hover{
-            color: $sand;
+            color: $pink-orange;
           }
         }
       }
@@ -69,7 +69,7 @@
   display: flex;
   padding: 10px;
   font-family: $font-raleway;
-  color: $sand;
+  color: $pink-orange;
   justify-content: center;
   span{
     margin-right: 10px;
