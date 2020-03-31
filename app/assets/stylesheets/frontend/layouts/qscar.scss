@@ -550,289 +550,185 @@ h1, h2, h3, h4, h5, h6{
       }
     }
   }
-}
-
-  section:nth-child(6){
-    .panel{
-      &.panel_right{
-        .form{
-          padding: 0 15px; 
-          margin: auto; 
-          width: 60%;
-          position: relative; 
-          box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  .content__category{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; 
+    .card{
+      overflow: hidden;
+      transform: scale(0.95);
+      transition: all .35s;
+      border-radius: 3px; 
+      background-color: transparent;
+      padding: 10px; 
+      border: 1px solid $pink-orange;
+      &:hover{
+        transform: scale(1);
+        transition: all .35s;
+      }
+      .card_header{
+        .title_header{
+          text-align: center;
+          color: $pink-orange;
+          text-transform: uppercase;
+          padding: 10px 0; 
         }
-        .form:before, .form:after{
-          content:"";
-          position:absolute; 
-          z-index:-1;
-          box-shadow:0 0 20px rgba(0,0,0,0.8);
-          top:10px;
-          bottom:10px;
-          left:0;
-          right:0;
-          border-radius:100px / 10px;
+      }
+      .card_body{
+        max-height: 50vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        p{
+          color: $sand;
         }
-        .form:after{
-          right:10px; 
-          left:auto; 
-          transform:skew(8deg) rotate(3deg);
+        li{
+          color: white; 
+          span{
+            width: 20px; 
+            height: 20px; 
+            background-image: url('qscar_Check.svg');
+            display: inline-flex;
+            padding: 5px;
+            margin: 0 0.4rem; 
+          }
         }
       }
     }
-  }
-
-  .content_presentation{
-    display: flex;
-    width: 100%;
-    flex-direction: column-reverse; 
-    .text_content{
-      height: 280px;
-      overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
-      margin: 10px 0 5px;
-      padding-right: 14px;
-      text-align: justify;
-      text-justify: distribute;
-      h3{
-        color: $pink-orange;
-
+    @media #{$medium-up}{
+      justify-content: space-around;
+      .card{
+        position: relative;
+        max-width: 350px;
       }
+
+    }
+  }
+}
+
+section:nth-child(6){
+  .panel{
+    &.panel_right{
+      .form{
+        padding: 0 15px; 
+        margin: auto; 
+        width: 60%;
+        position: relative; 
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      }
+      .form:before, .form:after{
+        content:"";
+        position:absolute; 
+        z-index:-1;
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:10px;
+        bottom:10px;
+        left:0;
+        right:0;
+        border-radius:100px / 10px;
+      }
+      .form:after{
+        right:10px; 
+        left:auto; 
+        transform:skew(8deg) rotate(3deg);
+      }
+    }
+  }
+}
+
+.content_presentation{
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse; 
+  .text_content{
+    height: 280px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin: 10px 0 5px;
+    padding-right: 14px;
+    text-align: justify;
+    text-justify: distribute;
+    h3{
+      color: $pink-orange;
+
+    }
+    p{
+      color: white;
+    }
+  }
+  .content_img.img_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 3s linear 1s 1 profileImg;
+    @keyframes profileImg{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    .cadre{
+      width: 200px;
+      .picture_face{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media #{$medium-up} {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .text_content{
+      height: 100% ;
+      width: 50%;
+      overflow-y: hidden;
       p{
-        color: white;
+        line-height: 2;
       }
     }
     .content_img.img_profile{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: 3s linear 1s 1 profileImg;
-      @keyframes profileImg{
-        0%{
-          opacity: 0;
-        }
-        100%{
-          opacity: 1;
-        }
-      }
       .cadre{
-        width: 200px;
+        width: 300px; 
         .picture_face{
           width: 100%;
           height: auto;
-        }
+        } 
       }
     }
-    @media #{$medium-up} {
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      .text_content{
-        height: 100% ;
-        width: 50%;
-        overflow-y: hidden;
-        p{
-          line-height: 2;
-        }
-      }
-      .content_img.img_profile{
-        .cadre{
-          width: 300px; 
-         .picture_face{
-            width: 100%;
-            height: auto;
-          } 
-        }
-      }
-    } 
-    
-    .content_img.grid_img{
-      width: 80%;
-      display: flex; 
-      margin: 2.5rem auto;
-      padding: .5rem;
-      flex-direction: column; 
-      @media #{$medium-up}{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .img{
-        margin: auto;
-        border: 1px solid $sand;
-        width: 200px ;
-        height: 200px; 
-        background-image: url('blur-business.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; 
-        box-shadow: 0 10px 10px -3px $bezier;
-        &:hover{
-          border: 1px solid $grey-dark;
-          box-shadow: 0 15px 15px -3px $bezier;
-        }
-      }
-    }
-  }
-
-
-.content__category{
-  .inner_category{
-    width: 100%; 
-  }
-  .header_category{
-    display: inline-flex;
+  } 
+  
+  .content_img.grid_img{
+    width: 80%;
+    display: flex; 
+    margin: 2.5rem auto;
+    padding: .5rem;
     flex-direction: column; 
-    width: 100%;
-    margin: 25px 0 15px; 
     @media #{$medium-up}{
-      flex-direction: row; 
-      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
     }
-    .title_head{
-      flex-grow: 1;
-      border-bottom: 1px solid transparent;
-      transition: 0.4s;
-      &:focus,
-      &:hover, 
-      &:visited{
-        color: $pink-dark;
-        border-bottom: 1px solid $pink-dark;
-        transition: 0.8s;
-      }
-    }
-    .title_head span{
-      padding: 0 1rem;
-      display: flex;
-      color: $grey-dark;
-      letter-spacing: 0.1em;
-      justify-content: center;
-      cursor: pointer;
-      &:focus,
-      &:hover, 
-      &:visited{
-        color: $pink-dark;
-      }
-    }
-  }
-  .content_category{
-    width: 100%;
-    .innner_content_category{
-      display: flex;
-      max-height: 50vh;
-      overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
-      h5{
-        margin-bottom: 0; 
-        color: $pink-dark;
-      }
-      .inner_content{
-        p{
-          width: 100%; 
-          color: white;
-          font-size: 14px;  
-        }
-        display:flex;
-        flex-direction: column;
-      & >*{
-        padding: 10px;
-        flex: 1 100%;
-        }
-      }
-      li{
-        color: white; 
-        span{
-          width: 20px; 
-          height: 20px; 
-          background-image: url('qscar_Check.svg');
-          display: inline-flex;
-          padding: 5px;
-          margin: 0 0.4rem; 
-        }
-      }
-      h5{
-        text-align: center; 
-        padding: 1.5rem;
-        font-family: $font-raleway;
-      }
-      .content_from{
-        border: 1px solide $grey-light;
-        display: flex; 
-        justify-content: flex-end;
-        height: 100%;
-        text-align: center;
-        width: 100%;
-        .price {
-          display: flex;
-          height: 100%;
-          justify-content: center;
-          text-align: center;
-          width: 200px;
-        }
-        .price:hover{
-          &:after {
-            left: 120%;
-            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-          }
-        }
-        .btn-price{
-          overflow: hidden;
-          position: relative;
-          padding: 0.7rem 1.5rem; 
-          border: 1px solid $pink-dark;
-          &:after {
-            content: "";
-            height: 155px;
-            left: -75px;
-            opacity: 0.2;
-            position: absolute;
-            top: -50px;
-            transform: rotate(35deg);
-            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-            width: 50px;
-            z-index: -10;
-          }
-          span{
-            font-weight: bolder;
-            font-style: italic; 
-            text-transform: uppercase; 
-            color: $pink-dark;
-            z-index: 20;
-          }
-        }
-      }
-    }
-    @media #{$medium-up}{
-      .innner_content_category{
-        min-height: 460px;
-        overflow-y: hidden;
-        .inner_content{
-          flex-flow: row wrap;
-          & >*{
-            padding: 0; 
-          }
-        }
-        h5{
-          margin: 15px 0 20px 0; 
-        }
-      }
-    }
-  }
-  .discover_more{
-    display: flex;
-    span.btn{
-      display: flex;
-      justify-content: center;
-      width: 250px;
-      a{
-        font-family: "Raleway", sans-serif;
-        color: #D8C3A5;
-        font-weight: bold;
-        letter-spacing: 1px;
+    .img{
+      margin: auto;
+      border: 1px solid $sand;
+      width: 200px ;
+      height: 200px; 
+      background-image: url('blur-business.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; 
+      box-shadow: 0 10px 10px -3px $bezier;
+      &:hover{
+        border: 1px solid $grey-dark;
+        box-shadow: 0 15px 15px -3px $bezier;
       }
     }
   }
 }
+
 // Animation on svg
 .advice{
   &.adv_3{

@@ -44,18 +44,18 @@ fr:
       landing-page: "Landing page"
       hebergement: "Production, mise en ligne & hébergement"
       landing_option: "Landing page"
-      explication_landing: "Parfait pour être présent sur internet et faire une présentation brève de votre activité dans l'attente d'un site. Parfait aussi pour présenter un projet, un produit, un article dans un but de vente ou d'inscription"
+      explication_landing: "Unique page de présentation à but commercial pour mettre en avant un event ou un produit."
       static_option: "Site statique"
-      explication_static: "Votre site vous permettra d'être présent sur le net, de présenter votre activité et d'être joignable."
+      explication_static: "Un site qui vous permettra de vous présenter vous et votre activité professionelle"
       dynamic_option: "Site dynamique"
-      explication_dynamic: "Un site dynamique vous permettra d'aller plus qu'une présentation de votre activité, vous pourrez permettre aux personnes de remplir des formulaires que ce soit pour des inscriptions ou autre."
+      explication_dynamic: "Un site un peu plus complexe qui s'adapte selon l'utilisateur. "
       price_from: "A partir de"
       custom_made: "Il est bien évident que nos services sont modulables, conscients que chaque projet est unique, n'hésitez donc pas à nous contcater si vous désirez plus d'infomations"
 
       list_choice_landing: |
         Une page web responsive de contenu en une langue
         Un template conçu pour vous selon l'image de votre marque
-        Un formulaire de contat
+        Un formulaire de contact
         Vos photos, textes et votre logo
         Liens vers vos réseaux sociaux
         Hébergement & enregistrement du nom de domaine pour une durée d'une année renouvelable
