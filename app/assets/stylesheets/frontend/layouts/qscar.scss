@@ -548,62 +548,69 @@ h1, h2, h3, h4, h5, h6{
           }
         }
       }
-    }
-  }
-  .content__category{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px; 
-    .card{
-      overflow: hidden;
-      transform: scale(0.95);
-      transition: all .35s;
-      border-radius: 3px; 
-      background-color: transparent;
-      padding: 10px; 
-      border: 1px solid $pink-orange;
-      &:hover{
-        transform: scale(1);
-        transition: all .35s;
-      }
-      .card_header{
-        .title_header{
-          text-align: center;
-          color: $pink-orange;
-          text-transform: uppercase;
-          padding: 10px 0; 
+      &.our_price{
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        .content__category{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 30px; 
+          .card{
+            overflow: hidden;
+            transform: scale(0.95);
+            transition: all .35s;
+            border-radius: 3px; 
+            background-color: transparent;
+            padding: 10px; 
+            border: 1px solid $pink-orange;
+            max-width: 350px;
+            &:hover{
+              transform: scale(1);
+              transition: all .35s;
+            }
+            .card_header{
+              .title_header{
+                text-align: center;
+                color: $pink-orange;
+                text-transform: uppercase;
+                padding: 10px 0; 
+              }
+            }
+            .card_body{
+              max-height: 50vh;
+              overflow-y: scroll;
+              -webkit-overflow-scrolling: touch;
+              p{
+                color: $sand;
+              }
+              li{
+                color: white; 
+                span{
+                  width: 20px; 
+                  height: 20px; 
+                  background-image: url('qscar_Check.svg');
+                  display: inline-flex;
+                  padding: 5px;
+                  margin: 0 0.4rem; 
+                }
+              }
+            }
+          }
         }
-      }
-      .card_body{
-        max-height: 50vh;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        p{
-          color: $sand;
-        }
-        li{
-          color: white; 
-          span{
-            width: 20px; 
-            height: 20px; 
-            background-image: url('qscar_Check.svg');
-            display: inline-flex;
-            padding: 5px;
-            margin: 0 0.4rem; 
+        @media #{$medium-up}{
+          overflow-x: hidden;
+          .content__category{
+          justify-content: space-around;
+            .card{
+              position: relative;
+            }
           }
         }
       }
     }
-    @media #{$medium-up}{
-      justify-content: space-around;
-      .card{
-        position: relative;
-        max-width: 350px;
-      }
-
-    }
   }
+  
 }
 
 section:nth-child(6){
