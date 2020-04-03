@@ -1,0 +1,9 @@
+<h4><%= t('user.new.title') %></h4>
+<div class="container_admin">
+  <%= form_for @user do |f| %>
+    <%= f.label t("user.new.username") %>
+    <%= f.text_field :username, placeholder: 'name' %>
+    <%= f.label t("user.new.email") %>
+    <%= f.text_field :email, placeholder: 'email' %>
+  <% end %>
+</div>

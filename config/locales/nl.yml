@@ -97,6 +97,16 @@ nl:
     price: 
       our_different: "Our differents"
       offers: "Offers"
+
+  blog:
+    index:
+      welcome: "Welkom in mijn blog"
+
+  user:
+    new:
+      title: "Register"
+      username: "Naam"
+      email: "Email"
   
 
   

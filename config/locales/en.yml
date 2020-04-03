@@ -98,3 +98,16 @@ en:
       our_different: "What do"
       offers: "We offer"
   
+  blog:
+    index:
+      welcome: "Welcome in my blog"
+  
+  user:
+    new:
+      title: "Sign in"
+      username: "Name"
+      email: "Email"
+
+
+
+  
