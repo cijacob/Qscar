@@ -110,6 +110,12 @@ fr:
 
   user:
     new:
-      title: "S'enregistrer"
+      title_signin: "S'enregistrer"
+      title_login: "Se connecter"
       username: "Nom"
       email: "Email"
+      password: "Mot de passe"
+      password_confirmation: "Confirmation mot de passe"
+      cta_signin: "S'inscrire"
+    error:
+      username: "Votre nom ne doit contenir que des caractères alphanumériques ou des _"

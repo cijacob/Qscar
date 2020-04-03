@@ -104,9 +104,15 @@ nl:
 
   user:
     new:
-      title: "Register"
+      title_signin: "Sign in"
+      title_login: "Login"
       username: "Naam"
       email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation password"
+      cta_signin: "Sign in"
+    erro:
+      username: "Votre nom ne doit contenir que des caractères alphanumériques ou des _"
   
 
   

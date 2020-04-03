@@ -1,9 +1,27 @@
-<h4><%= t('user.new.title') %></h4>
 <div class="container_admin">
-  <%= form_for @user do |f| %>
-    <%= f.label t("user.new.username") %>
-    <%= f.text_field :username, placeholder: 'name' %>
-    <%= f.label t("user.new.email") %>
-    <%= f.text_field :email, placeholder: 'email' %>
+  <h4><%= t("user.new.title_signin") %></h4>
+  <% if @user.errors.any? %>
+    <div>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+         <% end %> 
+      </ul>
+    </div>  
   <% end %>
+
+  <%= debug @user %>
+  <%= form_for @user do |f| %>
+    <%= f.label :username, t("user.new.username") %>
+    <%= f.text_field :username, placeholder: t("user.new.username") %>
+    <%= f.label :email, t("user.new.email") %>
+    <%= f.email_field :email, placeholder: t("user.new.email") %>
+    <%= f.label :password, t("user.new.password") %>
+    <%= f.password_field :password, placeholder: t("user.new.password") %>
+    <%= f.label :password_confirmation, t("user.new.password_confirmation") %>
+    <%= f.password_field :password_confirmation, placeholder: t("user.new.password_confirmation") %>  
+    <button type="submit"><%= t("user.new.cta_signin") %></button>
+  <% end %>
+
+  <h4><%= t("user.new.title_login") %></h4>
 </div>

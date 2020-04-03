@@ -104,9 +104,15 @@ en:
   
   user:
     new:
-      title: "Sign in"
+      title_signin: "Sign in"
+      title_login: "Login"
       username: "Name"
       email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation password"
+      cta_signin: "Sign in"
+    error:
+      username: "Votre nom ne doit contenir que des caractères alphanumériques ou des _"
 
 
 
