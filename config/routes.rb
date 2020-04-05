@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   get 'projects/index'
   get 'contact-form', to: 'messages#new', as: 'new_message' 
   post 'send-form', to: 'messages#create', as: 'create_message'
