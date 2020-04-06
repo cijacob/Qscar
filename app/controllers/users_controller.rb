@@ -10,9 +10,18 @@ class UsersController < ApplicationController
     if @user.valid?
       @user.save
       UserMailer.confirm_email(@user).deliver_now
-      redirect_to :new
+      redirect_to new_user_url
     else
       render 'new'
+    end 
+  end 
+
+  def confirm
+    @user = user.find(params[:id])
+    if @user.confirmation_token == params[:toke]
+
+    else 
+      
     end 
   end 
 

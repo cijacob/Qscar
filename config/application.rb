@@ -12,12 +12,13 @@ module Qscar
     config.site = {
       name: 'https://www.qscar.be' 
     }
-
+    
     config.load_defaults 5.2
     config.i18n.fallbacks = [I18n.default_locale]
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :fr
 
     I18n.available_locales = [:en, :fr, :nl]
+    config.action_mailer.default_url_options = { host: 'localhost:3000/' }
   end
 end
