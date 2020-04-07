@@ -26,7 +26,7 @@ gem 'pry-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'devise'
-
+gem 'devise-i18n'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

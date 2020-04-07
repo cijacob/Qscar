@@ -95,6 +95,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.9.1)
+      devise (>= 4.7.1)
     erubi (1.8.0)
     exception_handler (0.8.0.0)
       bundler
@@ -256,6 +258,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  devise-i18n
   exception_handler (~> 0.8.0.0)
   font-awesome-rails
   foundation-rails (~> 6.5, >= 6.5.3.0)
