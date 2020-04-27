@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.valid?
       @user.save
       UserMailer.confirm_email(@user).deliver_now
-      redirect_to new_user_url
+      redirect_to new_user_session_path
     else
       render 'new'
     end 
